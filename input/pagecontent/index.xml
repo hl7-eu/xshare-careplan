@@ -1,0 +1,71 @@
+<div xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
+
+  <blockquote class="dragon">
+    <p>The specification herewith documented is a working specification. 
+    No liability can be inferred from the use or misuse of this specification, or its consequences.</p>
+  </blockquote>
+
+  <a name="scope"></a>
+
+  <h3 id="scope">Scope</h3>
+  <p>
+    This guide provides instructions to help you understand and implement your product in accordance with the <strong>xShare IPS+</strong>, facilitating in the access and adoption of the selected specifications.
+  </p>
+
+
+  <a name="purpose"></a>
+
+  <h3 id="purpose">Purpose</h3>
+  <p>
+    This FHIR Implementation guide is designed to assist users in implementing the Care Plan. 
+  </p>
+  <p><i>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </i>
+  </p>
+  
+
+  <a name="how-to-read"></a>
+
+  <h3 id="how-to-read">How to read</h3>
+  <p>
+    The content of this guide is organized following the BDAT (business, data, application, and technology) model, as illustrated in the figure below.
+  </p>
+
+
+  <div>
+
+    <figure>
+      <p></p>
+       {% include bdat.svg %}
+      <figcaption>Fig. 1: Navigating this guide</figcaption>
+    </figure>
+  </div>
+  <p>Where:
+  </p>
+  <ul>
+    <li>
+    The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/business.html">
+      <strong>business domain</strong>
+    </a> describes the business rationale of the use cases in clinical research that rely on the Care Plan use case.
+  </li>
+  <li>
+    The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/application.html">
+    <strong>application domain</strong>
+  </a> describes three use cases in clinical research in detail.
+</li>
+<li>
+    The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/content.html">
+  <strong>data domain</strong>
+</a> describes the Care Plan data model.
+</li>
+<li>
+    The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/technical.html">
+<strong>technology domain</strong>
+</a> describes the technology stack, the use cases flow referencing the infrastructure components required to support these use cases.
+</li>
+</ul>
+
+<p></p>
+</div>
