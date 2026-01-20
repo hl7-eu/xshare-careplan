@@ -14,7 +14,7 @@ Description: "Logical model representing a draft Care Plan structure, including 
 * description 0..1 markdown "Description" "Narrative description of the care plan."
 * status 0..1 code "Status" "Workflow/lifecycle status of the care plan."
 * category 0..* CodeableConcept "Category" "Categorization of the care plan (e.g., rehab, chronic care, oncology)."
-
+* period 0..1 Period "Period" "Time period the care plan covers."
 * author[x] 0..* EHDSHealthProfessional or EHDSOrganisation "Author" "Person or organization responsible for creating the care plan."
 
 * careTeam 0..* BackboneElement "Care team / organization in charge" "CareTeam or responsible organization having charge of the plan."
