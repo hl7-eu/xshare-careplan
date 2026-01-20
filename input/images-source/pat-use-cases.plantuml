@@ -1,0 +1,21 @@
+@startuml
+title Care Plan Patient Use Case
+
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Patient" as PAT
+
+rectangle "Care Plan Services" {
+  usecase "Search & see care plan" as UC_View
+  usecase "Share care plan" as UC_Share
+  usecase "Execute & record actions" as UC_Exec
+  usecase "See the care plan" as UC_See
+}
+
+PAT --> UC_View
+PAT --> UC_Share
+PAT --> UC_Exec
+
+UC_View ..> UC_See    : <<include>>
+@enduml

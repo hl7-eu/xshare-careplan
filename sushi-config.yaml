@@ -19,8 +19,8 @@ publisher:
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
-#dependencies:
-#  hl7.fhir.uv.ips: 1.1.0 
+dependencies:
+   xtehr.eu.ehds.models: 0.2.1
 #  hl7.fhir.extensions.r5: 4.0.1
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -98,10 +98,12 @@ menu:
 #    Overview: business.html
   Application: application.html
 #    Overview: application.html
-  Data: content.html
+  Data:
+    Logical Model: StructureDefinition-careplan-draft-logical.html
+    Content: content.html
   Technology: technical.html
   Downloads: downloads.html
-#    Overview: technical.html
+  Artifacts: artifacts.html
   About: about.html
 
   # Button: button.html
