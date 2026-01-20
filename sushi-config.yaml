@@ -20,7 +20,7 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-   xtehr.eu.ehds.models: 0.2.1
+   xtehr.eu.ehds.models: current
 #  hl7.fhir.extensions.r5: 4.0.1
 #   hl7.fhir.us.mcode:
 #     id: mcode
