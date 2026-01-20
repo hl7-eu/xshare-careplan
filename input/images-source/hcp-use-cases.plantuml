@@ -22,7 +22,7 @@ rectangle "Care Plan Services" {
 
   usecase "Update care plan" as UC_Update
   usecase "See the care plan" as UC_See
-  usecase "Monitor care plan\n(incl. outcomes)" as UC_Monitor
+  usecase "Monitor care plan\n(outcomes)" as UC_Monitor
 }
 
 HCP --> UC_View

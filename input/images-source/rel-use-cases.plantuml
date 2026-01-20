@@ -1,0 +1,20 @@
+@startuml
+title Care Plan Relative Use Case
+
+left to right direction
+skinparam packageStyle rectangle
+
+actor Relatives as REL
+
+
+rectangle "Care Plan Services" {
+  usecase "Search & see care plan" as UC_View
+  usecase "Execute & record actions" as UC_Exec
+  usecase "See the care plan" as UC_See
+}
+
+REL --> UC_View
+REL --> UC_Exec
+
+UC_View ..> UC_See    : <<include>>
+@enduml
