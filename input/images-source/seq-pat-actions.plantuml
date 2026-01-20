@@ -25,8 +25,12 @@ PAT -> PAT_APP: Execute care plan action
 activate PAT_APP
 PAT_APP -> PAT_APP: Record action locally
 PAT_APP -> EHR_S: Update care plan action record
+EHR_S -> EHR_S: Record executed actions
 EHR_S --> PAT_APP: Confirmation
 PAT_APP --> PAT: Show action status
+opt Update care plan based on executed actions
+EHR_S -> EHR_S: Update care plan
+end opt
 deactivate PAT_APP
 end group
 

@@ -27,7 +27,17 @@ This sequence summarizes authentication/identification, care plan retrieval, and
 
 <div>
 <p> </p>
-{% include seq-careplan-actions.svg %}
+{% include seq-pat-actions.svg %}
+<p> </p>
+</div>
+
+### HCP Actions Sequence
+
+This sequence summarizes HCP authentication, care plan creation, execution, and monitoring with EHR-S updates.
+
+<div>
+<p> </p>
+{% include seq-hcp-actions.svg %}
 <p> </p>
 </div>
 
