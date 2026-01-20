@@ -10,6 +10,30 @@ The full details of these use cases are given in [*Analysis of business use case
 <p> </p>
 </div>
 
+### Application Participants
+
+The application domain involves a patient-facing app and a clinical professional app, interacting with EHR systems that can also play a role Health Information Exchange or Order Management system.
+
+
+<div>
+<p> </p>
+{% include app-actors.svg %}
+<p> </p>
+</div>
+
+### Care Plan Actions Sequence
+
+This sequence summarizes authentication/identification, care plan retrieval, and action execution with updates to EHR-S.
+
+<div>
+<p> </p>
+{% include seq-careplan-actions.svg %}
+<p> </p>
+</div>
+
+
+
+
 
 _Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum._
 

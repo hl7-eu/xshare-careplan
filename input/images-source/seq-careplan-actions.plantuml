@@ -1,0 +1,33 @@
+@startuml
+actor "Patient" as PAT
+participant "Patient App" as PAT_APP
+participant "EHR-S" as EHR_S
+
+==== Patient authentication and identification ====
+group #00FF00 "Auth and Identification (Patient and Patient App)"
+PAT -[#blue]> PAT_APP: Authenticates and identifies
+PAT_APP -> PAT_APP: Validate session and context
+end group
+
+==== Care plan search and retrieve ====
+group "Care plan search and retrieve"
+PAT -> PAT_APP: Search care plan
+activate PAT_APP
+PAT_APP -> EHR_S: Query care plan
+EHR_S --> PAT_APP: Care plan data
+PAT_APP --> PAT: Display care plan
+deactivate PAT_APP
+end group
+
+==== Execute and record action ====
+group "Execute and record action"
+PAT -> PAT_APP: Execute care plan action
+activate PAT_APP
+PAT_APP -> PAT_APP: Record action locally
+PAT_APP -> EHR_S: Update care plan action record
+EHR_S --> PAT_APP: Confirmation
+PAT_APP --> PAT: Show action status
+deactivate PAT_APP
+end group
+
+@enduml
