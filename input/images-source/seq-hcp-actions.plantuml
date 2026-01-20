@@ -4,9 +4,11 @@ participant "HCP App" as HCP_APP
 participant "EHR-S" as EHR_S
 
 ==== HCP authentication and identification ====
-group #00FF00 "Auth and Identification (HCP and HCP App)"
+group #00FF00 "Auth and Identification"
 HCP -[#blue]> HCP_APP: Authenticates and identifies
 HCP_APP -> HCP_APP: Validate session and context
+HCP_APP -> EHR_S: Verify identity
+EHR_S --> HCP_APP: Identity verified
 end group
 
 ==== Patient identification search ====
@@ -29,18 +31,15 @@ EHR_S --> HCP_APP: Patient health data
 end opt
 HCP_APP -> HCP_APP: Create care plan
 HCP_APP -> EHR_S: Publish care plan
-EHR_S --> HCP_APP: Confirmation
-HCP_APP --> HCP: Show care plan status
 deactivate HCP_APP
 end group
 
 ==== Execute and record action ====
 group "Execute and record action"
-HCP -> HCP_APP: Execute care plan actions
+HCP -> HCP_APP: Execute care plan action
 activate HCP_APP
-HCP_APP -> HCP_APP: Execute actions
-HCP_APP -> HCP_APP: Document execution
-HCP_APP -> EHR_S: Record executed actions
+HCP_APP -> HCP_APP: Record action locally
+HCP_APP -> EHR_S: Update care plan action record
 EHR_S -> EHR_S: Record executed actions
 EHR_S --> HCP_APP: Confirmation
 HCP_APP --> HCP: Show action status
@@ -54,7 +53,7 @@ end group
 group "Monitor care plan"
 HCP -> HCP_APP: Monitor care plan
 activate HCP_APP
-HCP_APP -> EHR_S: Query care plan
+HCP_APP -> EHR_S: Search care plan
 EHR_S --> HCP_APP: Care plan data
 opt Consult patient health data
 HCP_APP -> EHR_S: Retrieve patient health data
@@ -67,8 +66,6 @@ end opt
 HCP_APP -> HCP_APP: Display care plan
 HCP_APP -> HCP_APP: Edit care plan
 HCP_APP -> EHR_S: Publish care plan update
-EHR_S --> HCP_APP: Confirmation
-HCP_APP --> HCP: Show updated care plan
 deactivate HCP_APP
 end group
 

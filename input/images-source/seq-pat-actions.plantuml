@@ -4,9 +4,11 @@ participant "Patient App" as PAT_APP
 participant "EHR-S" as EHR_S
 
 ==== Patient authentication and identification ====
-group #00FF00 "Auth and Identification (Patient and Patient App)"
+group #00FF00 "Auth and Identification"
 PAT -[#blue]> PAT_APP: Authenticates and identifies
 PAT_APP -> PAT_APP: Validate session and context
+PAT_APP -> EHR_S: Verify identity
+EHR_S --> PAT_APP: Identity verified
 end group
 
 ==== Care plan search and retrieve ====
