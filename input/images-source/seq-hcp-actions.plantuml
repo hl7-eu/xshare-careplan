@@ -7,8 +7,7 @@ participant "EHR-S" as EHR_S
 group #00FF00 "Auth and Identification"
 HCP -[#blue]> HCP_APP: Authenticates and identifies
 HCP_APP -> HCP_APP: Validate session and context
-HCP_APP -> EHR_S: Verify identity
-EHR_S --> HCP_APP: Identity verified
+EHR_S -> EHR_S: Validate session and context
 end group
 
 ==== Patient identification search ====
@@ -41,8 +40,6 @@ activate HCP_APP
 HCP_APP -> HCP_APP: Record action locally
 HCP_APP -> EHR_S: Update care plan action record
 EHR_S -> EHR_S: Record executed actions
-EHR_S --> HCP_APP: Confirmation
-HCP_APP --> HCP: Show action status
 opt Update care plan based on executed actions
 EHR_S -> EHR_S: Update care plan
 end opt

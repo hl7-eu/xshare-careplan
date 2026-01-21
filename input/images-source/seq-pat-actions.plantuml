@@ -7,8 +7,7 @@ participant "EHR-S" as EHR_S
 group #00FF00 "Auth and Identification"
 PAT -[#blue]> PAT_APP: Authenticates and identifies
 PAT_APP -> PAT_APP: Validate session and context
-PAT_APP -> EHR_S: Verify identity
-EHR_S --> PAT_APP: Identity verified
+EHR_S -> EHR_S: Validate session and context
 end group
 
 ==== Care plan search and retrieve ====
@@ -28,8 +27,6 @@ activate PAT_APP
 PAT_APP -> PAT_APP: Record action locally
 PAT_APP -> EHR_S: Update care plan action record
 EHR_S -> EHR_S: Record executed actions
-EHR_S --> PAT_APP: Confirmation
-PAT_APP --> PAT: Show action status
 opt Update care plan based on executed actions
 EHR_S -> EHR_S: Update care plan
 end opt

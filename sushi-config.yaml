@@ -21,6 +21,7 @@ publisher:
 #
 dependencies:
    xtehr.eu.ehds.models: current
+   hl7.fhir.eu.base: current
 #  hl7.fhir.extensions.r5: 4.0.1
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -50,6 +51,8 @@ pages:
     title: Care Plan Content overview
   technical.md:
     title: Care Plan Technical overview
+  map-careplan.xml:
+    title: Care Plan Mapping
   downloads.md:
     title: Downloads
 #  button.md:
@@ -101,7 +104,9 @@ menu:
   Data:
     Logical Model: StructureDefinition-careplan-draft-logical.html
     Content: content.html
-  Technology: technical.html
+  Technology:
+    Overview: technical.html
+    Care Plan Mapping: map-careplan.html
   Downloads: downloads.html
   Artifacts: artifacts.html
   About: about.html

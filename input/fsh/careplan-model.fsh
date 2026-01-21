@@ -1,8 +1,8 @@
 // =======================================================
-// Logical Model: CarePlanDraft (R4-safe, SUSHI-friendly)
+// Logical Model: XShareCarePlanModel (R4-safe, SUSHI-friendly)
 // =======================================================
 
-Logical: CarePlanDraft
+Logical: XShareCarePlanModel
 Id: careplan-draft-logical
 Title: "Care Plan (Logical Model)"
 Description: "Logical model representing a draft Care Plan structure, including ownership, goals, evidence, and activities with outcomes."
