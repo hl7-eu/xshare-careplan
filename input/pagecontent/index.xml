@@ -10,7 +10,7 @@
 
   <h3 id="scope">Scope</h3>
   <p>
-    This guide provides instructions to help you understand and implement your product in accordance with the <strong>xShare IPS+</strong>, facilitating in the access and adoption of the selected specifications.
+    This guide specifies how - based on the input collected by the xShare project - a <b>Care Plan</b> should be represented in HL7 FHIR.
   </p>
 
 
@@ -18,12 +18,11 @@
 
   <h3 id="purpose">Purpose</h3>
   <p>
-    This FHIR Implementation guide is designed to assist users in implementing the Care Plan. 
+    This FHIR Implementation guide is designed to assist users in implementing Care Plans. 
   </p>
   <p><i>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </i>
-  </p>
+    In the context of the European Health Data Space (EHDS), this guide supports extending the European Electronic Health Record Exchange Format (EHRxF) to represent Care Plans as a dedicated Health Information Domain. It focuses on care plans as structured, standardised, guideline-informed and machine-readable artefacts that can support coordinated multidisciplinary care, continuity across settings and borders, and better use of health data for decision support, quality improvement and research.
+  </i></p>
   
 
   <a name="how-to-read"></a>
