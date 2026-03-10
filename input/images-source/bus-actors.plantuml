@@ -1,0 +1,21 @@
+@startuml
+title Care Plan Business Actors
+
+left to right direction
+skinparam packageStyle rectangle
+
+' ========= Actors =========
+actor Patient as PAT
+actor "HC Professional" as HCP
+actor Clinician as CLIN
+actor Nurse as NUR
+actor "HC Provider (Org)" as ORG
+actor Relatives as REL
+actor Caregiver as CARG
+
+CLIN -|> HCP
+NUR  -|> HCP
+
+
+
+@enduml

@@ -1,0 +1,1969 @@
+{
+  "resourceType": "Bundle",
+  "id": "8bc76131-f5b7-48d4-b0b7-536e6548bf05",
+  "type": "searchset",
+  "total": 1,
+  "link":
+  [
+    {
+      "relation": "self",
+      "url": "http://example.org/CarePlan?_id=d97c73cd-729f-4122-b763-685d253c8479&_include=*"
+    }
+  ],
+  "entry":
+  [
+    {
+      "fullUrl": "http://example.org/CarePlan/d97c73cd-729f-4122-b763-685d253c8479",
+      "resource":
+      {
+        "resourceType": "CarePlan",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "tag":
+          [
+            {
+              "code": "hypertension",
+              "system": "https://hyp.saglik.gov.tr/hyp-hastaliklar"
+            }
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:10:14.395+03:00"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "code": "monitoring_main",
+                "system": "https://hyp.saglik.gov.tr/hyp-yonetim-surecleri"
+              }
+            ]
+          }
+        ],
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "period":
+        {
+          "start": "2026-01-20T09:10:14.506Z",
+          "end": "2026-07-19T21:00:00.000Z"
+        },
+        "author":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        },
+        "goal":
+        [
+          {
+            "reference": "Goal/fb1d67c0-87da-4d82-9bfa-8cc74077cbc6"
+          },
+          {
+            "reference": "Goal/1af3fe16-e5ec-4fe8-be75-57beb3803c93"
+          },
+          {
+            "reference": "Goal/004ce5bd-0c37-4abc-b05f-bc0ce6419247"
+          },
+          {
+            "reference": "Goal/294843a8-e785-430e-8a8d-38ea7a75492c"
+          }
+        ],
+        "activity":
+        [
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/1ed24082-f4f8-43d3-8313-b16e6c2b542f"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/4241241b-2742-46a9-ab6d-970f2fa0c4af"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/323a81b4-ceff-44fb-acbe-730e2e09e45a"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/0dc364eb-24de-491f-bd95-a597b55ecb5a"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/de3efc25-c70a-42d8-b7ce-dc6a2d9b92b1"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "CommunicationRequest/bf2a47f0-1f54-41e6-ab03-e0cebbf06e86"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "CommunicationRequest/1027840c-2c74-422f-bfbe-3ff8a6570d8d"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "CommunicationRequest/3f0845bf-af1a-459e-98f2-c0f038206e15"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "MedicationRequest/e426c7d3-0262-4866-b677-1f0a4e4f7b45"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "MedicationRequest/972ff2a5-2306-4209-a3d8-7379a6006685"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/d4530d8d-6742-f2f3-2b36-b2c6fc70ea07"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/86a64801-3bd6-eb54-420e-16fc4d28c866"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/b35acdc8-ec5c-16ef-b16e-18e4ccd83a93"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/d0a66374-fc2f-db53-1fc4-7dc40f06f72e"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/e711f3e3-ba53-11f2-4dc9-092254771804"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/034e7b9f-5533-0226-0733-9eac643b6923"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/661434ae-1dfd-8a0c-5248-a8ae495e1701"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/38e60d60-6673-f42d-4b7c-8d2c82cc10e1"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/203db754-fc09-c095-78a8-0b379122ec4c"
+            }
+          }
+        ],
+        "id": "d97c73cd-729f-4122-b763-685d253c8479"
+      },
+      "search":
+      {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/034e7b9f-5533-0226-0733-9eac643b6923",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "034e7b9f-5533-0226-0733-9eac643b6923",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:10:14.396+03:00"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-servis-istek-kategorileri",
+                "code": "referral-request"
+              }
+            ]
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "https://skrs3.saglik.gov.tr/5b096f9c-278c-4f65-8845-a9dc76d595e7",
+              "code": "7",
+              "display": "Sigara Bırakma Polikliniği"
+            }
+          ],
+          "text": "Hastanın tütün ve tütün ürünlerini bırakması için Sigara Bırakma Polikliniği sevki önerilir."
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "authoredOn": "2026-01-20T09:09:38.171Z",
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:10:14.506Z",
+          "end": "2026-07-19T21:00:00.000Z"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/0dc364eb-24de-491f-bd95-a597b55ecb5a",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:09:20.609+03:00"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-servis-istek-kategorileri",
+                "code": "patient-request"
+              }
+            ]
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "https://hyp.saglik.gov.tr/hyp-davranissal-prosedurler",
+              "code": "6",
+              "display": "Alkol bırakma"
+            }
+          ],
+          "text": "Hastanın alkolü bırakması önerilir."
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "patientInstruction": "Alkol kullanımını bırakmanız önerilir.",
+        "authoredOn": "2026-01-20T09:09:14.371Z",
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:09:14.371Z"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        },
+        "id": "0dc364eb-24de-491f-bd95-a597b55ecb5a"
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/1ed24082-f4f8-43d3-8313-b16e6c2b542f",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "tag":
+          [
+            {
+              "code": "hypertension",
+              "system": "https://hyp.saglik.gov.tr/hyp-hastaliklar"
+            }
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:09:13.947+03:00"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-servis-istek-kategorileri",
+                "code": "episode-request"
+              }
+            ]
+          }
+        ],
+        "orderDetail":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-servis-istek-aksiyon-kodlari",
+                "code": "episode-hypertension-medication-six-monthly"
+              }
+            ]
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "https://hyp.saglik.gov.tr/hyp-yonetim-surecleri",
+              "code": "monitoring_main"
+            }
+          ],
+          "text": "Yaşam tarzı değişikliği öneriniz. Tansiyon regüle olana kadar aylık ara kontrole çağırmanız önerilir. HYP izlem sıklığı ise 6 ay olarak devam edecektir."
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "authoredOn": "2026-01-20T09:08:58.238Z",
+        "occurrenceTiming":
+        {
+          "repeat":
+          {
+            "boundsPeriod":
+            {
+              "start": "2026-07-19T21:00:00.000Z"
+            },
+            "frequency": 1,
+            "period": 6,
+            "periodUnit": "mo"
+          }
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        },
+        "id": "1ed24082-f4f8-43d3-8313-b16e6c2b542f"
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/203db754-fc09-c095-78a8-0b379122ec4c",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "203db754-fc09-c095-78a8-0b379122ec4c",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:10:14.396+03:00"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-servis-istek-kategorileri",
+                "code": "referral-request"
+              }
+            ]
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "https://skrs3.saglik.gov.tr/c04bee57-c5d4-443d-e040-7b0a6f146a3d",
+              "code": "166",
+              "display": "Nefroloji"
+            }
+          ],
+          "text": "Hastanın albüminürisi ya da proteinürisi olduğu için Nefroloji sevki önerilir."
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "authoredOn": "2026-01-20T09:09:38.171Z",
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:10:14.506Z",
+          "end": "2026-07-19T21:00:00.000Z"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/323a81b4-ceff-44fb-acbe-730e2e09e45a",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:09:20.609+03:00"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-servis-istek-kategorileri",
+                "code": "patient-request"
+              }
+            ]
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "https://hyp.saglik.gov.tr/hyp-davranissal-prosedurler",
+              "code": "5",
+              "display": "Sigara bırakma"
+            }
+          ],
+          "text": "Hastanın tütün ve tütün ürünlerini bırakması önerilir."
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "patientInstruction": "Tütün ve tütün ürünlerini bırakmanız önerilir.",
+        "authoredOn": "2026-01-20T09:09:14.371Z",
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:09:14.371Z"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        },
+        "id": "323a81b4-ceff-44fb-acbe-730e2e09e45a"
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/38e60d60-6673-f42d-4b7c-8d2c82cc10e1",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "38e60d60-6673-f42d-4b7c-8d2c82cc10e1",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:10:14.399+03:00"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-servis-istek-kategorileri",
+                "code": "referral-request"
+              }
+            ]
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "https://skrs3.saglik.gov.tr/5b096f9c-278c-4f65-8845-a9dc76d595e7",
+              "code": "1",
+              "display": "Diyetisyen"
+            }
+          ],
+          "text": "Hastanın ağırlık kaybı için Diyetisyen sevki önerilir."
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "authoredOn": "2026-01-20T09:09:38.171Z",
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:10:14.506Z",
+          "end": "2026-07-19T21:00:00.000Z"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/4241241b-2742-46a9-ab6d-970f2fa0c4af",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:09:20.609+03:00"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-servis-istek-kategorileri",
+                "code": "patient-request"
+              }
+            ]
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "https://hyp.saglik.gov.tr/hyp-davranissal-prosedurler",
+              "code": "1",
+              "display": "Fiziksel aktivite"
+            }
+          ],
+          "text": "Yaşlı hastanın ana kas gruplarında kuvvet (güçlendirme) egzersizi, haftada en az 5 gün aerobik egzersiz, ve haftada en az 2 gün esneklik/denge egzersizi yapması önerilir."
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "patientInstruction": "Sağlığınız için ana kas gruplarında kuvvet (güçlendirme) egzersizi, haftada en az 5 gün aerobik egzersiz, ve haftada en az 2 gün esneklik/denge egzersizi yapmasnız önerilir.",
+        "authoredOn": "2026-01-20T09:09:14.371Z",
+        "occurrenceTiming":
+        {
+          "repeat":
+          {
+            "boundsPeriod":
+            {
+              "start": "2026-01-20T09:09:14.371Z"
+            },
+            "frequency": 5,
+            "period": 1,
+            "periodUnit": "wk"
+          }
+        },
+        "quantityQuantity":
+        {
+          "unit": "min",
+          "value": 30,
+          "system": "http://unitsofmeasure.org"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        },
+        "id": "4241241b-2742-46a9-ab6d-970f2fa0c4af"
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/661434ae-1dfd-8a0c-5248-a8ae495e1701",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "661434ae-1dfd-8a0c-5248-a8ae495e1701",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:10:14.396+03:00"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-servis-istek-kategorileri",
+                "code": "referral-request"
+              }
+            ]
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "https://skrs3.saglik.gov.tr/5b096f9c-278c-4f65-8845-a9dc76d595e7",
+              "code": "3",
+              "display": "Fizyoterapist"
+            }
+          ],
+          "text": "Hastanın fiziksel aktivite önerileri alması için Fizyoterapist sevki önerilir."
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "authoredOn": "2026-01-20T09:09:38.171Z",
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:10:14.506Z",
+          "end": "2026-07-19T21:00:00.000Z"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/86a64801-3bd6-eb54-420e-16fc4d28c866",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "86a64801-3bd6-eb54-420e-16fc4d28c866",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:10:14.397+03:00"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-servis-istek-kategorileri",
+                "code": "lab-request"
+              }
+            ]
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "https://skrs3.saglik.gov.tr/c3eb10bb-27b9-6344-e043-14031b0a5679",
+              "code": "L105000",
+              "display": "LDL kolesterol (Direkt)"
+            }
+          ]
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "authoredOn": "2026-01-20T09:10:14.507Z",
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:10:14.507Z"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/b35acdc8-ec5c-16ef-b16e-18e4ccd83a93",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "b35acdc8-ec5c-16ef-b16e-18e4ccd83a93",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:10:14.396+03:00"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-servis-istek-kategorileri",
+                "code": "lab-request"
+              }
+            ]
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "https://skrs3.saglik.gov.tr/c3eb10bb-27b9-6344-e043-14031b0a5679",
+              "code": "L103050",
+              "display": "HDL kolesterol"
+            }
+          ]
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "authoredOn": "2026-01-20T09:10:14.507Z",
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:10:14.507Z"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/d0a66374-fc2f-db53-1fc4-7dc40f06f72e",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "d0a66374-fc2f-db53-1fc4-7dc40f06f72e",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:10:14.397+03:00"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-servis-istek-kategorileri",
+                "code": "lab-request"
+              }
+            ]
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "http://loinc.org",
+              "code": "43396-1",
+              "display": "non-HDL Kolesterol"
+            }
+          ]
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "authoredOn": "2026-01-20T09:10:14.507Z",
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:10:14.507Z"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/d4530d8d-6742-f2f3-2b36-b2c6fc70ea07",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "d4530d8d-6742-f2f3-2b36-b2c6fc70ea07",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:10:14.397+03:00"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-servis-istek-kategorileri",
+                "code": "lab-request"
+              }
+            ]
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "https://skrs3.saglik.gov.tr/c3eb10bb-27b9-6344-e043-14031b0a5679",
+              "code": "L104520",
+              "display": "Kolesterol (Serum/Plazma)"
+            }
+          ]
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "authoredOn": "2026-01-20T09:10:14.506Z",
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:10:14.506Z"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/de3efc25-c70a-42d8-b7ce-dc6a2d9b92b1",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:09:20.608+03:00"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-servis-istek-kategorileri",
+                "code": "patient-request"
+              }
+            ]
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "https://hyp.saglik.gov.tr/hyp-davranissal-prosedurler",
+              "code": "7",
+              "display": "Sağlıklı beslenme"
+            }
+          ],
+          "text": "Hastanın sağlıklı beslenme alışkanlığı edinmesi önerilir."
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "patientInstruction": "Yağı azaltmanız, tuz alımını günde 5 g’ın altında tutmanız, haftada en az 2 kez balık yemeniz, günde en az 5 porsiyon (en az 400 g/gün) sebze ve meyve tüketmeniz (bunlardan en az 2.5-4 porsiyonu sebze, 2-3 porsiyonu meyve olarak tüketmeniz), tam tahılları ve ürünlerini tercih etmeniz, posalı (lifli) gıda tüketimini arttırmanız, şekerle tatlandırılmış içecekleri tüketmemeniz tavsiye edilir.",
+        "authoredOn": "2026-01-20T09:09:14.370Z",
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:09:14.370Z"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        },
+        "id": "de3efc25-c70a-42d8-b7ce-dc6a2d9b92b1"
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/e711f3e3-ba53-11f2-4dc9-092254771804",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "e711f3e3-ba53-11f2-4dc9-092254771804",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:10:14.397+03:00"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-servis-istek-kategorileri",
+                "code": "lab-request"
+              }
+            ]
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "https://skrs3.saglik.gov.tr/c3eb10bb-27b9-6344-e043-14031b0a5679",
+              "code": "L107250",
+              "display": "Trigliserid (Serum/Plazma)"
+            }
+          ]
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "authoredOn": "2026-01-20T09:10:14.507Z",
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:10:14.507Z"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/CommunicationRequest/1027840c-2c74-422f-bfbe-3ff8a6570d8d",
+      "resource":
+      {
+        "resourceType": "CommunicationRequest",
+        "status": "active",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:09:20.608+03:00"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-bilgi-materyalleri",
+                "code": "8",
+                "display": "Soru ve Cevaplarla Diyabet Broşürü"
+              }
+            ],
+            "text": "Kilolu veya obeziteli bireye Soru ve Cevaplarla Diyabet broşürü verilmesi önerilir."
+          }
+        ],
+        "authoredOn": "2026-01-20T09:09:14.370Z",
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:09:14.370Z"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        },
+        "id": "1027840c-2c74-422f-bfbe-3ff8a6570d8d"
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/CommunicationRequest/3f0845bf-af1a-459e-98f2-c0f038206e15",
+      "resource":
+      {
+        "resourceType": "CommunicationRequest",
+        "status": "active",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:09:20.608+03:00"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-bilgi-materyalleri",
+                "code": "9",
+                "display": "Sağlıklı Beslenme Önerileri Broşürü"
+              }
+            ],
+            "text": "Hastaya Sağlıklı Beslenme Önerileri broşürü verilmesi önerilir."
+          }
+        ],
+        "authoredOn": "2026-01-20T09:09:14.370Z",
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:09:14.370Z"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        },
+        "id": "3f0845bf-af1a-459e-98f2-c0f038206e15"
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/CommunicationRequest/bf2a47f0-1f54-41e6-ab03-e0cebbf06e86",
+      "resource":
+      {
+        "resourceType": "CommunicationRequest",
+        "status": "active",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:09:20.609+03:00"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-bilgi-materyalleri",
+                "code": "10",
+                "display": "Fiziksel Aktivite Önerileri Broşürü"
+              }
+            ],
+            "text": "Hastaya Fiziksel Aktivite Önerileri Broşürü verilmesi önerilir."
+          }
+        ],
+        "authoredOn": "2026-01-20T09:09:14.370Z",
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:09:14.370Z"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        },
+        "id": "bf2a47f0-1f54-41e6-ab03-e0cebbf06e86"
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/MedicationRequest/972ff2a5-2306-4209-a3d8-7379a6006685",
+      "resource":
+      {
+        "resourceType": "MedicationRequest",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:07:59.479+03:00"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-ilac-kategorisi",
+                "code": "immunization"
+              }
+            ]
+          }
+        ],
+        "medicationCodeableConcept":
+        {
+          "coding":
+          [
+            {
+              "system": "https://skrs3.saglik.gov.tr/c3dbbb53-3b59-06e1-e043-14031b0a9fe6",
+              "code": "141",
+              "display": "MEVSİMSEL İNFLUENZA AŞISI (GRİP AŞISI)"
+            }
+          ],
+          "text": "Hastanın yılda bir influenza aşısı yaptırması önerilir."
+        },
+        "authoredOn": "2026-01-20T09:07:19.342Z",
+        "dosageInstruction":
+        [
+          {
+            "doseAndRate":
+            [
+              {
+                "type":
+                {
+                  "coding":
+                  [
+                    {
+                      "system": "https://hyp.saglik.gov.tr/hyp-doz-onerisi",
+                      "code": "4",
+                      "display": "Yeni ilaç önerisi"
+                    }
+                  ]
+                }
+              }
+            ],
+            "timing":
+            {
+              "repeat":
+              {
+                "boundsPeriod":
+                {
+                  "start": "2026-01-20T09:07:19.342Z"
+                }
+              }
+            }
+          }
+        ],
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        },
+        "id": "972ff2a5-2306-4209-a3d8-7379a6006685"
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/MedicationRequest/e426c7d3-0262-4866-b677-1f0a4e4f7b45",
+      "resource":
+      {
+        "resourceType": "MedicationRequest",
+        "status": "active",
+        "intent": "proposal",
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:09:13.947+03:00"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          }
+        ],
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-ilac-kategorisi",
+                "code": "medication"
+              }
+            ]
+          }
+        ],
+        "medicationCodeableConcept":
+        {
+          "coding":
+          [
+            {
+              "system": "http://www.whocc.no/atc",
+              "code": "C09A",
+              "display": "ACE İnhibitörleri"
+            }
+          ]
+        },
+        "authoredOn": "2026-01-20T09:09:14.160Z",
+        "dosageInstruction":
+        [
+          {
+            "doseAndRate":
+            [
+              {
+                "type":
+                {
+                  "coding":
+                  [
+                    {
+                      "system": "https://hyp.saglik.gov.tr/hyp-doz-onerisi",
+                      "code": "4",
+                      "display": "Yeni ilaç önerisi"
+                    }
+                  ]
+                }
+              }
+            ],
+            "timing":
+            {
+              "repeat":
+              {
+                "boundsPeriod":
+                {
+                  "start": "2026-01-20T09:09:14.160Z"
+                }
+              }
+            }
+          }
+        ],
+        "requester":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        },
+        "id": "e426c7d3-0262-4866-b677-1f0a4e4f7b45"
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990",
+      "resource":
+      {
+        "resourceType": "EpisodeOfCare",
+        "id": "6da32923-2bba-4394-9a52-c2e533e6c990",
+        "meta":
+        {
+          "versionId": "5",
+          "lastUpdated": "2026-01-20T12:10:14.678+03:00",
+          "source": "https://hyp.saglik.gov.tr",
+          "tag":
+          [
+            {
+              "system": "https://hyp.saglik.gov.tr/hyp-hastaliklar",
+              "code": "hypertension"
+            },
+            {
+              "system": "https://hyp.saglik.gov.tr/hyp-performansa-dahil",
+              "code": "true"
+            },
+            {
+              "system": "https://hyp.saglik.gov.tr/hyp-uzaktan-takip",
+              "code": "false"
+            }
+          ]
+        },
+        "identifier":
+        [
+          {
+            "system": "https://uss.saglik.gov.tr",
+            "value": "ezk7dwef49kdlk"
+          }
+        ],
+        "status": "finished",
+        "statusHistory":
+        [
+          {
+            "status": "onhold",
+            "period":
+            {
+              "start": "2026-01-20T12:08:38.866+03:00"
+            }
+          },
+          {
+            "status": "active",
+            "period":
+            {
+              "start": "2026-01-20T12:08:57.826+03:00"
+            }
+          }
+        ],
+        "type":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://hyp.saglik.gov.tr/hyp-yonetim-surecleri",
+                "code": "monitoring_main"
+              }
+            ]
+          }
+        ],
+        "patient":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "managingOrganization":
+        {
+          "reference": "Organization/873499",
+          "display": "ANKARA ÇANKAYA 237 NOLU AİLE HEKİMLİĞİ BİRİMİ"
+        },
+        "period":
+        {
+          "start": "2026-01-20T12:07:18.907+03:00",
+          "end": "2026-01-20T12:10:14.496+03:00"
+        },
+        "careManager":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel|hp,admin,impersonator,admin|56"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Goal/004ce5bd-0c37-4abc-b05f-bc0ce6419247",
+      "resource":
+      {
+        "resourceType": "Goal",
+        "lifecycleStatus": "active",
+        "description":
+        {
+          "text": "Diastolik Kan Basıncı"
+        },
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:09:13.947+03:00"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          },
+          {
+            "url": "https://hyp.saglik.gov.tr/fhir/StructureDefinition/is-previous-achieved",
+            "valueBoolean": true
+          }
+        ],
+        "expressedBy":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        },
+        "addresses":
+        [
+          {
+            "reference": "Observation/abe51e02-ec81-49fa-9608-ee84f34fd899"
+          }
+        ],
+        "startDate": "2026-01-20",
+        "target":
+        [
+          {
+            "measure":
+            {
+              "coding":
+              [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolik Kan Basıncı"
+                }
+              ]
+            },
+            "detailRange":
+            {
+              "high":
+              {
+                "unit": "mmHg",
+                "value": 80,
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          }
+        ],
+        "id": "004ce5bd-0c37-4abc-b05f-bc0ce6419247"
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Goal/1af3fe16-e5ec-4fe8-be75-57beb3803c93",
+      "resource":
+      {
+        "resourceType": "Goal",
+        "lifecycleStatus": "active",
+        "description":
+        {
+          "text": "Beden Kitle Indeksi (BKİ)"
+        },
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:09:20.608+03:00"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          },
+          {
+            "url": "https://hyp.saglik.gov.tr/fhir/StructureDefinition/is-previous-achieved",
+            "valueBoolean": false
+          }
+        ],
+        "expressedBy":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        },
+        "addresses":
+        [
+          {
+            "reference": "Observation/40801f4d-2be7-4916-9122-77c052d56129"
+          }
+        ],
+        "startDate": "2026-01-20",
+        "target":
+        [
+          {
+            "measure":
+            {
+              "coding":
+              [
+                {
+                  "system": "http://loinc.org",
+                  "code": "39156-5",
+                  "display": "Beden Kitle Indeksi (BKİ)"
+                }
+              ]
+            },
+            "detailRange":
+            {
+              "high":
+              {
+                "unit": "kg/m2",
+                "value": 28.3,
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          }
+        ],
+        "id": "1af3fe16-e5ec-4fe8-be75-57beb3803c93"
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Goal/294843a8-e785-430e-8a8d-38ea7a75492c",
+      "resource":
+      {
+        "resourceType": "Goal",
+        "lifecycleStatus": "active",
+        "description":
+        {
+          "text": "Sistolik Kan Basıncı"
+        },
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:09:13.947+03:00"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          },
+          {
+            "url": "https://hyp.saglik.gov.tr/fhir/StructureDefinition/is-previous-achieved",
+            "valueBoolean": false
+          }
+        ],
+        "expressedBy":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        },
+        "addresses":
+        [
+          {
+            "reference": "Observation/d1108fba-26ba-4737-9378-3ea177b8e03c"
+          }
+        ],
+        "startDate": "2026-01-20",
+        "target":
+        [
+          {
+            "measure":
+            {
+              "coding":
+              [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Sistolik Kan Basıncı"
+                }
+              ]
+            },
+            "detailRange":
+            {
+              "high":
+              {
+                "unit": "mmHg",
+                "value": 130,
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          }
+        ],
+        "id": "294843a8-e785-430e-8a8d-38ea7a75492c"
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Goal/fb1d67c0-87da-4d82-9bfa-8cc74077cbc6",
+      "resource":
+      {
+        "resourceType": "Goal",
+        "lifecycleStatus": "active",
+        "description":
+        {
+          "text": "Ağırlık"
+        },
+        "subject":
+        {
+          "reference": "Patient/fcbe7276-cd74-407c-aeba-9d791b1c2094"
+        },
+        "meta":
+        {
+          "source": "https://hyp.saglik.gov.tr",
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T12:09:20.608+03:00"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/6da32923-2bba-4394-9a52-c2e533e6c990"
+            }
+          },
+          {
+            "url": "https://hyp.saglik.gov.tr/fhir/StructureDefinition/is-previous-achieved",
+            "valueBoolean": false
+          }
+        ],
+        "expressedBy":
+        {
+          "reference": "Practitioner/86b1edbb-7641-4fca-9e25-e571c9be3676",
+          "display": "Mustafa Yüksel"
+        },
+        "addresses":
+        [
+          {
+            "reference": "Observation/b68a8c1a-753f-4228-98d0-981b68e82a25"
+          }
+        ],
+        "startDate": "2026-01-20",
+        "target":
+        [
+          {
+            "measure":
+            {
+              "coding":
+              [
+                {
+                  "system": "http://loinc.org",
+                  "code": "29463-7",
+                  "display": "Ağırlık"
+                }
+              ]
+            },
+            "detailRange":
+            {
+              "high":
+              {
+                "unit": "kg",
+                "value": 81.7,
+                "system": "http://unitsofmeasure.org"
+              }
+            }
+          }
+        ],
+        "id": "fb1d67c0-87da-4d82-9bfa-8cc74077cbc6"
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    }
+  ]
+}

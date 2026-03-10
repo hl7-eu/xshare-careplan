@@ -1,0 +1,18 @@
+@startuml
+title Care Plan HC Provider Use Case
+
+left to right direction
+skinparam packageStyle rectangle
+
+actor "HC Provider (Org)" as ORG
+
+rectangle "Care Plan Services" {
+  usecase "Search & see care plan" as UC_View
+  usecase "Monitor care plan\n(outcomes)" as UC_Monitor
+}
+
+ORG --> UC_View
+ORG --> UC_Monitor
+
+UC_View ..> UC_See    : <<include>>
+@enduml

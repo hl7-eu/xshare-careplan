@@ -1,0 +1,2579 @@
+{
+  "resourceType": "Bundle",
+  "id": "e56c7d3f-94c4-4702-9ad3-07a72e400382",
+  "type": "searchset",
+  "total": 1,
+  "link":
+  [
+    {
+      "relation": "self",
+      "url": "http://example.org/CarePlan?_id=7c1792ea-7aa4-9524-7441-6808ed462225&_include=*&_page=1"
+    }
+  ],
+  "entry":
+  [
+    {
+      "fullUrl": "http://example.org/CarePlan/7c1792ea-7aa4-9524-7441-6808ed462225",
+      "resource":
+      {
+        "resourceType": "CarePlan",
+        "id": "7c1792ea-7aa4-9524-7441-6808ed462225",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-state",
+              "code": "monitoring"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/CarePlanProfile"
+          ],
+          "versionId": "10",
+          "lastUpdated": "2026-01-20T09:21:37.145Z"
+        },
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "intent": "plan",
+        "title": "Care Plan of Atlas Şentürk",
+        "author":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          }
+        ],
+        "created": "2026-01-20T09:14:19.155Z",
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "734163000",
+                "display": "Care plan"
+              }
+            ],
+            "text": "Care plan"
+          }
+        ],
+        "careTeam":
+        [
+          {
+            "reference": "CareTeam/1aafd029-3040-d0c0-9724-9e08888cd7fa",
+            "display": "CVD Care Team of Atlas Şentürk"
+          }
+        ],
+        "period":
+        {
+          "start": "2026-01-20T09:14:19.155Z"
+        },
+        "encounter":
+        {
+          "reference": "Encounter/63fb8721-9c53-4005-8cfc-4a2f9d126992"
+        },
+        "goal":
+        [
+          {
+            "reference": "Goal/99a0b1b0-4a4c-3815-9219-8026aa210614",
+            "display": "LDL"
+          },
+          {
+            "reference": "Goal/33fe4802-1dba-c275-45be-ea8dbd8dd60f",
+            "display": "Systolic blood pressure"
+          },
+          {
+            "reference": "Goal/da9504ba-d421-cbd9-2e85-0b8d04e389e4",
+            "display": "Diastolic blood pressure"
+          },
+          {
+            "reference": "Goal/710f10ee-0545-88db-9452-0c037fa57abb",
+            "display": "BMI"
+          },
+          {
+            "reference": "Goal/b56fdcf5-cb99-7490-c040-c8770c07807f",
+            "display": "Body weight"
+          }
+        ],
+        "activity":
+        [
+          {
+            "reference":
+            {
+              "reference": "CommunicationRequest/b457ce36-efca-f8aa-c9e3-66002db4af78",
+              "display": "Dietary Education Material"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "CommunicationRequest/19104e0b-3038-fd4a-7221-c67313aac51b",
+              "display": "CVD Patient Guide"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "MedicationRequest/b1f1bc9a-2675-7219-925b-e71b9979b70f",
+              "display": "Moderate intensity statin"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "MedicationRequest/f9c0f6fb-f45c-75e0-be6a-e0dc85da30b7",
+              "display": "Calcium channel blockers and diuretics"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "MedicationRequest/4a4c61e1-d5ee-c7d0-3dd0-98755aeaec7a",
+              "display": "pneumococcal conjugate vaccine, 13 valent"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/d48af415-341e-b115-9866-3346af310375",
+              "display": "Moderate intensity exercise for at least 30 minutes for >= 5 days per week"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/4c5a07ef-9590-1de4-ade5-c6c874e94c27",
+              "display": "Refer to a Wellness Center"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/422b26d5-da6b-7a30-5cf9-e1cc80e8afa2",
+              "display": "Refer to a dietitian"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/28e27d70-02b8-e9fe-0a82-106890a35402",
+              "display": "Refer to a Smoking Cessation Unit"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/929c79e3-b777-ec13-00bf-7318dde3c988",
+              "display": "Self-measurement of blood pressure"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/0719e4af-4367-79c2-f5fe-6d317aa03ca3",
+              "display": "Cholesterol in LDL in Serum or Plasma"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/b97f8ba8-9a61-a356-3c75-74bfd21603b9",
+              "display": "Creatinine in Serum or Plasma"
+            }
+          },
+          {
+            "reference":
+            {
+              "reference": "ServiceRequest/085a934e-f730-df08-2352-8706e7c77c21",
+              "display": "WHO-5"
+            }
+          }
+        ],
+        "note":
+        [
+          {
+            "authorReference":
+            {
+              "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+              "display": "Can YILMAZ"
+            },
+            "time": "2026-01-20T09:21:32.647Z",
+            "text": "Some final notes",
+            "extension":
+            [
+              {
+                "url": "https://kroniq.health/StructureDefinition/final-note",
+                "valueBoolean": true
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "addresses":
+        [
+          {
+            "reference": "Condition/f84b72d4-ebb9-691b-87bc-89db02a60e88"
+          },
+          {
+            "reference": "Condition/cc57e78d-2073-5cd0-0b65-9ceb03656c2d"
+          }
+        ]
+      },
+      "search":
+      {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Condition/cc57e78d-2073-5cd0-0b65-9ceb03656c2d",
+      "resource":
+      {
+        "resourceType": "Condition",
+        "id": "cc57e78d-2073-5cd0-0b65-9ceb03656c2d",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "cvd-history-examination"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/ConditionProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:15:29.193Z"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          }
+        ],
+        "clinicalStatus":
+        {
+          "coding":
+          [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "active"
+            }
+          ],
+          "text": "active"
+        },
+        "verificationStatus":
+        {
+          "coding":
+          [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "confirmed"
+            }
+          ],
+          "text": "confirmed"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://kroniq.health/CodeSystem/condition-category",
+                "code": "diagnosis",
+                "display": "Diagnosis"
+              }
+            ],
+            "text": "Diagnosis"
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "42343007",
+              "display": "Congestive heart failure (disorder)"
+            }
+          ],
+          "text": "Congestive heart failure (disorder)"
+        },
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "encounter":
+        {
+          "reference": "Encounter/63fb8721-9c53-4005-8cfc-4a2f9d126992"
+        },
+        "onsetDateTime": "2026-01-20T09:14:19.262Z",
+        "recordedDate": "2026-01-20T09:14:19.262Z",
+        "recorder":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        },
+        "asserter":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Condition/f84b72d4-ebb9-691b-87bc-89db02a60e88",
+      "resource":
+      {
+        "resourceType": "Condition",
+        "id": "f84b72d4-ebb9-691b-87bc-89db02a60e88",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "cvd-history-examination"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/ConditionProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:15:29.193Z"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          }
+        ],
+        "clinicalStatus":
+        {
+          "coding":
+          [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "active"
+            }
+          ],
+          "text": "active"
+        },
+        "verificationStatus":
+        {
+          "coding":
+          [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "confirmed"
+            }
+          ],
+          "text": "confirmed"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://kroniq.health/CodeSystem/condition-category",
+                "code": "diagnosis",
+                "display": "Diagnosis"
+              }
+            ],
+            "text": "Diagnosis"
+          }
+        ],
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "38341003",
+              "display": "Hypertensive disorder, systemic arterial"
+            }
+          ],
+          "text": "Hypertensive disorder, systemic arterial"
+        },
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "encounter":
+        {
+          "reference": "Encounter/63fb8721-9c53-4005-8cfc-4a2f9d126992"
+        },
+        "onsetDateTime": "2026-01-20T09:14:19.259Z",
+        "recordedDate": "2026-01-20T09:14:19.259Z",
+        "recorder":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        },
+        "asserter":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Goal/b56fdcf5-cb99-7490-c040-c8770c07807f",
+      "resource":
+      {
+        "resourceType": "Goal",
+        "id": "b56fdcf5-cb99-7490-c040-c8770c07807f",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "cvd-lifestyle-management"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/GoalProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:17:19.515Z"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/visible-to-patient",
+            "valueBoolean": true
+          }
+        ],
+        "lifecycleStatus": "active",
+        "achievementStatus":
+        {
+          "coding":
+          [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress"
+            }
+          ]
+        },
+        "description":
+        {
+          "coding":
+          [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ],
+          "text": "Body weight"
+        },
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "startDate": "2026-01-20",
+        "target":
+        [
+          {
+            "measure":
+            {
+              "coding":
+              [
+                {
+                  "system": "http://loinc.org",
+                  "code": "29463-7",
+                  "display": "Body weight"
+                }
+              ],
+              "text": "Body weight"
+            },
+            "detailRange":
+            {
+              "high":
+              {
+                "value": 72.19,
+                "unit": "kg",
+                "system": "http://unitsofmeasure.org",
+                "code": "kg"
+              }
+            }
+          }
+        ],
+        "expressedBy":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Goal/da9504ba-d421-cbd9-2e85-0b8d04e389e4",
+      "resource":
+      {
+        "resourceType": "Goal",
+        "id": "da9504ba-d421-cbd9-2e85-0b8d04e389e4",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "antihypertensive-therapy-management"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/GoalProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:16:44.650Z"
+        },
+        "lifecycleStatus": "active",
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/cds-action-description",
+            "valueString": "dYCjaNdefHxCDuqhRdR2|LEBmEmGrOPVRBaJMjQQP|"
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/title",
+            "valueString": "Diastolic blood pressure"
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/visible-to-patient",
+            "valueBoolean": true
+          }
+        ],
+        "startDate": "2026-01-20",
+        "description":
+        {
+          "coding":
+          [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ],
+          "text": "Diastolic blood pressure"
+        },
+        "target":
+        [
+          {
+            "measure":
+            {
+              "coding":
+              [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "detailRange":
+            {
+              "low":
+              {
+                "value": 70,
+                "unit": "mmHg",
+                "system": "http://unitsofmeasure.org",
+                "code": "mmHg"
+              },
+              "high":
+              {
+                "value": 80,
+                "unit": "mmHg",
+                "system": "http://unitsofmeasure.org",
+                "code": "mmHg"
+              }
+            }
+          }
+        ],
+        "achievementStatus":
+        {
+          "coding":
+          [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress"
+            }
+          ]
+        },
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "expressedBy":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Goal/33fe4802-1dba-c275-45be-ea8dbd8dd60f",
+      "resource":
+      {
+        "resourceType": "Goal",
+        "id": "33fe4802-1dba-c275-45be-ea8dbd8dd60f",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "antihypertensive-therapy-management"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/GoalProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:16:44.650Z"
+        },
+        "lifecycleStatus": "active",
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/cds-action-description",
+            "valueString": "dYCjaNdefHxCDuqhRdR2|LEBmEmGrOPVRBaJMjQQP|"
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/title",
+            "valueString": "Systolic blood pressure"
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/visible-to-patient",
+            "valueBoolean": true
+          }
+        ],
+        "startDate": "2026-01-20",
+        "description":
+        {
+          "coding":
+          [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ],
+          "text": "Systolic blood pressure"
+        },
+        "target":
+        [
+          {
+            "measure":
+            {
+              "coding":
+              [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "detailRange":
+            {
+              "low":
+              {
+                "value": 120,
+                "unit": "mmHg",
+                "system": "http://unitsofmeasure.org",
+                "code": "mmHg"
+              },
+              "high":
+              {
+                "value": 129,
+                "unit": "mmHg",
+                "system": "http://unitsofmeasure.org",
+                "code": "mmHg"
+              }
+            }
+          }
+        ],
+        "achievementStatus":
+        {
+          "coding":
+          [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress"
+            }
+          ]
+        },
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "expressedBy":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Goal/710f10ee-0545-88db-9452-0c037fa57abb",
+      "resource":
+      {
+        "resourceType": "Goal",
+        "id": "710f10ee-0545-88db-9452-0c037fa57abb",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/concept-id",
+              "code": "BMIGoal"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "cvd-lifestyle-management"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/GoalProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:17:19.515Z"
+        },
+        "lifecycleStatus": "active",
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/cds-action-description",
+            "valueString": "ASCVD LIFESTYLE MANAGEMENT CARD 1|Suggestion 1|BMI"
+          },
+          {
+            "url": "https://kroniq.health/CodeSystem/concept-id",
+            "valueString": "BMIGoal"
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/title",
+            "valueString": "BMI"
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/visible-to-patient",
+            "valueBoolean": true
+          }
+        ],
+        "startDate": "2026-01-20",
+        "description":
+        {
+          "coding":
+          [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ],
+          "text": "Body mass index (BMI)"
+        },
+        "target":
+        [
+          {
+            "measure":
+            {
+              "coding":
+              [
+                {
+                  "system": "http://loinc.org",
+                  "code": "39156-5",
+                  "display": "Body mass index (BMI) [Ratio]"
+                }
+              ],
+              "text": "Body mass index (BMI)"
+            },
+            "detailRange":
+            {
+              "high":
+              {
+                "value": 24.98,
+                "unit": "kg/m2",
+                "system": "http://unitsofmeasure.org",
+                "code": "kg/m2"
+              }
+            }
+          }
+        ],
+        "achievementStatus":
+        {
+          "coding":
+          [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress"
+            }
+          ]
+        },
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "expressedBy":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Goal/99a0b1b0-4a4c-3815-9219-8026aa210614",
+      "resource":
+      {
+        "resourceType": "Goal",
+        "id": "99a0b1b0-4a4c-3815-9219-8026aa210614",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/concept-id",
+              "code": "LDLGoal"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "lipid-management"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/GoalProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:16:28.847Z"
+        },
+        "lifecycleStatus": "active",
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/cds-action-description",
+            "valueString": "LIPID MANAGEMENT CARD 4|Suggestion 1|LDL"
+          },
+          {
+            "url": "https://kroniq.health/CodeSystem/concept-id",
+            "valueString": "LDLGoal"
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/title",
+            "valueString": "LDL"
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/visible-to-patient",
+            "valueBoolean": true
+          }
+        ],
+        "startDate": "2026-01-20",
+        "description":
+        {
+          "coding":
+          [
+            {
+              "system": "http://loinc.org",
+              "code": "22748-8",
+              "display": "Cholesterol in LDL [Moles/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "LDL goal"
+        },
+        "target":
+        [
+          {
+            "measure":
+            {
+              "coding":
+              [
+                {
+                  "system": "http://loinc.org",
+                  "code": "22748-8",
+                  "display": "Cholesterol in LDL [Moles/volume] in Serum or Plasma"
+                }
+              ],
+              "text": "Cholesterol in LDL [Moles/volume] in Serum or Plasma"
+            },
+            "detailRange":
+            {
+              "high":
+              {
+                "value": 1.12,
+                "unit": "mmol/L",
+                "system": "http://unitsofmeasure.org",
+                "code": "mmol/L"
+              }
+            }
+          }
+        ],
+        "achievementStatus":
+        {
+          "coding":
+          [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress"
+            }
+          ]
+        },
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "expressedBy":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/CareTeam/1aafd029-3040-d0c0-9724-9e08888cd7fa",
+      "resource":
+      {
+        "resourceType": "CareTeam",
+        "id": "1aafd029-3040-d0c0-9724-9e08888cd7fa",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/CareTeamProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-18T19:41:18.627Z"
+        },
+        "status": "active",
+        "name": "CVD Care Team of Atlas Şentürk",
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "participant":
+        [
+          {
+            "extension":
+            [
+              {
+                "url": "https://kroniq.health/StructureDefinition/isManager",
+                "valueBoolean": true
+              }
+            ],
+            "member":
+            {
+              "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+              "display": "Can YILMAZ"
+            }
+          }
+        ]
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Patient/d5369ce3-5e05-4896-9355-1de9d090fe46",
+      "resource":
+      {
+        "resourceType": "Patient",
+        "id": "d5369ce3-5e05-4896-9355-1de9d090fe46",
+        "meta":
+        {
+          "versionId": "1",
+          "lastUpdated": "2026-01-18T19:39:58.329Z"
+        },
+        "active": true,
+        "name":
+        [
+          {
+            "use": "official",
+            "family": "Şentürk",
+            "given":
+            [
+              "Atlas"
+            ]
+          }
+        ],
+        "telecom":
+        [
+          {
+            "system": "phone",
+            "value": "555 5555555",
+            "use": "home"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1981-05-27",
+        "managingOrganization":
+        {
+          "reference": "Organization/example_hospital",
+          "display": "Example Hospital"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/CommunicationRequest/b457ce36-efca-f8aa-c9e3-66002db4af78",
+      "resource":
+      {
+        "resourceType": "CommunicationRequest",
+        "id": "b457ce36-efca-f8aa-c9e3-66002db4af78",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/concept-id",
+              "code": "dietary-education-material"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "cvd-lifestyle-management"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/CommunicationRequestProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:17:19.515Z"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/cds-action-description",
+            "valueString": "ZHPGmXLXyI16XBbtVque|RW00hHJ3UnWIOcfEy8GL|Dietary Education Material"
+          },
+          {
+            "url": "https://kroniq.health/CodeSystem/concept-id",
+            "valueString": "dietary-education-material"
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/title",
+            "valueString": "Dietary Education Material"
+          }
+        ],
+        "status": "active",
+        "payload":
+        [
+          {
+            "contentAttachment":
+            {
+              "contentType": "text/html",
+              "language": "en",
+              "url": "https://kroniq.health/assets/edu/dietary-education-material.pdf",
+              "title": "Dietary Education Material",
+              "creation": "2024-03-29T10:54:29.377Z"
+            }
+          }
+        ],
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "recipient":
+        [
+          {
+            "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46",
+            "display": "Atlas Şentürk"
+          }
+        ],
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:17:08.913Z"
+        },
+        "authoredOn": "2026-01-20T09:17:16.973Z",
+        "sender":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/CommunicationRequest/19104e0b-3038-fd4a-7221-c67313aac51b",
+      "resource":
+      {
+        "resourceType": "CommunicationRequest",
+        "id": "19104e0b-3038-fd4a-7221-c67313aac51b",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/concept-id",
+              "code": "ascvd-education-material"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "cvd-lifestyle-management"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/CommunicationRequestProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:17:19.515Z"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/cds-action-description",
+            "valueString": "hC5bG6ek3nl6vxAiOA1g|A41b8tNKx2ySFXuj1NjR|CVD Patient Guide"
+          },
+          {
+            "url": "https://kroniq.health/CodeSystem/concept-id",
+            "valueString": "ascvd-education-material"
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/title",
+            "valueString": "CVD Patient Guide"
+          }
+        ],
+        "status": "active",
+        "payload":
+        [
+          {
+            "contentAttachment":
+            {
+              "contentType": "text/html",
+              "language": "en",
+              "url": "assets/edu/cvd-education-material.pdf",
+              "title": "CVD Patient Guide"
+            }
+          }
+        ],
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "recipient":
+        [
+          {
+            "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46",
+            "display": "Atlas Şentürk"
+          }
+        ],
+        "occurrencePeriod":
+        {
+          "start": "2026-01-20T09:17:13.029Z"
+        },
+        "authoredOn": "2026-01-20T09:17:16.973Z",
+        "sender":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/MedicationRequest/b1f1bc9a-2675-7219-925b-e71b9979b70f",
+      "resource":
+      {
+        "resourceType": "MedicationRequest",
+        "id": "b1f1bc9a-2675-7219-925b-e71b9979b70f",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/concept-id",
+              "code": "Statin"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "lipid-management"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/MedicationRecommendationProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:16:28.847Z"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/cds-action-description",
+            "valueString": "ASCVD LIPID MANAGEMENT CARD 1|Suggestion 1|Moderate intensity statin"
+          },
+          {
+            "url": "https://kroniq.health/CodeSystem/concept-id",
+            "valueString": "Statin"
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/title",
+            "valueString": "Moderate intensity statin"
+          }
+        ],
+        "status": "active",
+        "intent": "proposal",
+        "medicationCodeableConcept":
+        {
+          "coding":
+          [
+            {
+              "system": "http://www.whocc.no/atc",
+              "code": "C10AA05",
+              "display": "atorvastatin"
+            }
+          ],
+          "text": "atorvastatin"
+        },
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "authoredOn": "2026-01-20T09:16:20.376Z",
+        "requester":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        },
+        "dosageInstruction":
+        [
+          {
+            "timing":
+            {
+              "repeat":
+              {
+                "boundsPeriod":
+                {
+                  "start": "2026-01-20T09:16:20.376Z"
+                }
+              }
+            }
+          }
+        ],
+        "encounter":
+        {
+          "reference": "Encounter/63fb8721-9c53-4005-8cfc-4a2f9d126992"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/MedicationRequest/4a4c61e1-d5ee-c7d0-3dd0-98755aeaec7a",
+      "resource":
+      {
+        "resourceType": "MedicationRequest",
+        "id": "4a4c61e1-d5ee-c7d0-3dd0-98755aeaec7a",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/concept-id",
+              "code": "PneumococcalVaccination"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "cvd-other-considerations"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/MedicationRecommendationProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:16:57.465Z"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "830152006",
+                "display": "Recommendation regarding vaccination (procedure)"
+              }
+            ],
+            "text": "Recommendation regarding vaccination (procedure)"
+          }
+        ],
+        "status": "active",
+        "intent": "proposal",
+        "dosageInstruction":
+        [
+          {
+            "timing":
+            {
+              "repeat":
+              {
+                "boundsPeriod":
+                {
+                  "start": "2026-01-20T09:16:55.162Z"
+                }
+              }
+            }
+          }
+        ],
+        "medicationCodeableConcept":
+        {
+          "coding":
+          [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "133",
+              "display": "pneumococcal conjugate vaccine, 13 valent"
+            }
+          ],
+          "text": "pneumococcal conjugate vaccine, 13 valent"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/cds-action-description",
+            "valueString": "qEVcwRzsgWp1ph1Ay7lY|pCJH9fv0k1Qs87vnhR01|Pneumococcal vaccination"
+          },
+          {
+            "url": "https://kroniq.health/CodeSystem/concept-id",
+            "valueString": "PneumococcalVaccination"
+          }
+        ],
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "authoredOn": "2026-01-20T09:16:55.162Z",
+        "requester":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        },
+        "encounter":
+        {
+          "reference": "Encounter/63fb8721-9c53-4005-8cfc-4a2f9d126992"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/MedicationRequest/f9c0f6fb-f45c-75e0-be6a-e0dc85da30b7",
+      "resource":
+      {
+        "resourceType": "MedicationRequest",
+        "id": "f9c0f6fb-f45c-75e0-be6a-e0dc85da30b7",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/concept-id",
+              "code": "CCB"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "antihypertensive-therapy-management"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/MedicationRecommendationProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:16:44.650Z"
+        },
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "306807008",
+                "display": "Recommendation to start drug treatment (procedure)"
+              }
+            ],
+            "text": "Recommendation to start drug treatment (procedure)"
+          }
+        ],
+        "status": "active",
+        "intent": "proposal",
+        "dosageInstruction":
+        [
+          {
+            "timing":
+            {
+              "repeat":
+              {
+                "boundsPeriod":
+                {
+                  "start": "2026-01-20T09:16:41.917Z"
+                }
+              }
+            }
+          }
+        ],
+        "medicationCodeableConcept":
+        {
+          "coding":
+          [
+            {
+              "system": "http://www.whocc.no/atc",
+              "code": "C08GA",
+              "display": "Calcium channel blockers and diuretics"
+            }
+          ],
+          "text": "Calcium channel blockers and diuretics"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/cds-action-description",
+            "valueString": "dYCjaNdefHxCDuqhRdR2|auYn91K7hu7nFEoD6uOs|Calcium-channel blocker "
+          },
+          {
+            "url": "https://kroniq.health/CodeSystem/concept-id",
+            "valueString": "CCB"
+          }
+        ],
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "authoredOn": "2026-01-20T09:16:41.917Z",
+        "requester":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        },
+        "encounter":
+        {
+          "reference": "Encounter/63fb8721-9c53-4005-8cfc-4a2f9d126992"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/d48af415-341e-b115-9866-3346af310375",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "d48af415-341e-b115-9866-3346af310375",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "cvd-lifestyle-management"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/ServiceRequestProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:17:19.515Z"
+        },
+        "status": "active",
+        "intent": "proposal",
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/cds-action-description",
+            "valueString": "nXL9Vbii3FnmMwOkL5C1|VaNYFfgjy582Xt4nU3bw|Moderate intensity exercise for at least 30 minutes for >= 5 days per week"
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/title",
+            "valueString": "Moderate intensity exercise for at least 30 minutes for >= 5 days per week"
+          }
+        ],
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "384758001",
+                "display": "Personal care treatments and procedures"
+              }
+            ],
+            "text": "Personal care treatments and procedures"
+          }
+        ],
+        "occurrenceTiming":
+        {
+          "repeat":
+          {
+            "boundsPeriod":
+            {
+              "start": "2026-01-20T09:16:58.509Z"
+            },
+            "frequency": 5,
+            "period": 1,
+            "periodUnit": "wk"
+          }
+        },
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "http://www.ama-assn.org/cpt",
+              "code": "183302000",
+              "display": "Active exercise"
+            }
+          ],
+          "text": "Moderate intensity exercise"
+        },
+        "performer":
+        [
+          {
+            "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46",
+            "display": "Atlas Şentürk"
+          }
+        ],
+        "authoredOn": "2026-01-20T09:17:16.973Z",
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "requester":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        },
+        "encounter":
+        {
+          "reference": "Encounter/63fb8721-9c53-4005-8cfc-4a2f9d126992"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/929c79e3-b777-ec13-00bf-7318dde3c988",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "929c79e3-b777-ec13-00bf-7318dde3c988",
+        "meta":
+        {
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/ServiceRequestProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:21:35.682Z"
+        },
+        "status": "active",
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "384758001",
+                "display": "Personal care treatments and procedures"
+              }
+            ],
+            "text": "Personal care treatments and procedures"
+          }
+        ],
+        "intent": "order",
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ],
+          "text": "Self-measurement of blood pressure"
+        },
+        "authoredOn": "2026-01-20T09:19:45.864Z",
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46",
+          "display": "Atlas Şentürk"
+        },
+        "occurrenceTiming":
+        {
+          "repeat":
+          {
+            "boundsPeriod":
+            {
+              "start": "2026-01-20T09:19:45.864Z",
+              "end": "2026-07-20T09:19:45.864Z"
+            },
+            "frequency": 2,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        },
+        "requester":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/title",
+            "valueString": "Self-measurement of blood pressure"
+          }
+        ],
+        "performer":
+        [
+          {
+            "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46",
+            "display": "Atlas Şentürk"
+          }
+        ],
+        "encounter":
+        {
+          "reference": "Encounter/63fb8721-9c53-4005-8cfc-4a2f9d126992"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/b97f8ba8-9a61-a356-3c75-74bfd21603b9",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "b97f8ba8-9a61-a356-3c75-74bfd21603b9",
+        "meta":
+        {
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/ServiceRequestProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:21:35.683Z"
+        },
+        "status": "active",
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "108252007",
+                "display": "Laboratory procedures"
+              }
+            ],
+            "text": "Laboratory procedures"
+          }
+        ],
+        "intent": "order",
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "http://loinc.org",
+              "code": "14682-9",
+              "display": "Creatinine [Moles/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Creatinine in Serum or Plasma"
+        },
+        "authoredOn": "2026-01-20T09:20:53.580Z",
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46",
+          "display": "Atlas Şentürk"
+        },
+        "occurrenceTiming":
+        {
+          "repeat":
+          {
+            "boundsPeriod":
+            {
+              "start": "2026-01-20T09:20:53.580Z",
+              "end": "2026-02-20T09:20:53.580Z"
+            }
+          }
+        },
+        "requester":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/title",
+            "valueString": "Creatinine in Serum or Plasma"
+          }
+        ],
+        "encounter":
+        {
+          "reference": "Encounter/63fb8721-9c53-4005-8cfc-4a2f9d126992"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/4c5a07ef-9590-1de4-ade5-c6c874e94c27",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "4c5a07ef-9590-1de4-ade5-c6c874e94c27",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "cvd-lifestyle-management"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/ServiceRequestProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:17:19.516Z"
+        },
+        "status": "active",
+        "intent": "proposal",
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/cds-action-description",
+            "valueString": "nXL9Vbii3FnmMwOkL5C1|VaNYFfgjy582Xt4nU3bw|Refer to a Wellness Center"
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/title",
+            "valueString": "Refer to a Wellness Center"
+          }
+        ],
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "306206005",
+                "display": "Referral to service (procedure)"
+              }
+            ],
+            "text": "Referral to service (procedure)"
+          }
+        ],
+        "performerType":
+        {
+          "coding":
+          [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36682004",
+              "display": "Physical therapist"
+            }
+          ],
+          "text": "Physical therapist"
+        },
+        "priority": "routine",
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36682004",
+              "display": "Physical therapist"
+            }
+          ],
+          "text": "Physical therapist"
+        },
+        "authoredOn": "2026-01-20T09:17:16.973Z",
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "occurrenceTiming":
+        {
+          "repeat":
+          {
+            "boundsPeriod":
+            {
+              "start": "2026-01-20T09:16:58.509Z"
+            }
+          }
+        },
+        "requester":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        },
+        "encounter":
+        {
+          "reference": "Encounter/63fb8721-9c53-4005-8cfc-4a2f9d126992"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/422b26d5-da6b-7a30-5cf9-e1cc80e8afa2",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "422b26d5-da6b-7a30-5cf9-e1cc80e8afa2",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "cvd-lifestyle-management"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/ServiceRequestProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:17:19.516Z"
+        },
+        "status": "active",
+        "intent": "proposal",
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/cds-action-description",
+            "valueString": "8vj4utXsDIBsJRg2vXLG|qjgcH3PSpXu6EZfQePo4|Refer to a dietitian"
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/title",
+            "valueString": "Refer to a dietitian"
+          }
+        ],
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "306206005",
+                "display": "Referral to service (procedure)"
+              }
+            ],
+            "text": "Referral to service (procedure)"
+          }
+        ],
+        "performerType":
+        {
+          "coding":
+          [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "159033005",
+              "display": "Dietitian (occupation)"
+            }
+          ],
+          "text": "Dietitian"
+        },
+        "priority": "routine",
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "159033005",
+              "display": "Dietitian (occupation)"
+            }
+          ],
+          "text": "Dietitian"
+        },
+        "authoredOn": "2026-01-20T09:17:16.973Z",
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "occurrenceTiming":
+        {
+          "repeat":
+          {
+            "boundsPeriod":
+            {
+              "start": "2026-01-20T09:16:58.764Z"
+            }
+          }
+        },
+        "requester":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        },
+        "encounter":
+        {
+          "reference": "Encounter/63fb8721-9c53-4005-8cfc-4a2f9d126992"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/28e27d70-02b8-e9fe-0a82-106890a35402",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "28e27d70-02b8-e9fe-0a82-106890a35402",
+        "meta":
+        {
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/page-id",
+              "code": "cvd-lifestyle-management"
+            },
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/ServiceRequestProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:17:19.515Z"
+        },
+        "status": "active",
+        "intent": "proposal",
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/cds-action-description",
+            "valueString": "wa4qlmu5wlyw2L6EUBuX|Ep5DvsLjfqky3yK5Pthk|Refer to a Smoking Cessation Unit"
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/title",
+            "valueString": "Refer to a Smoking Cessation Unit"
+          }
+        ],
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "306206005",
+                "display": "Referral to service (procedure)"
+              }
+            ],
+            "text": "Referral to service (procedure)"
+          }
+        ],
+        "performerType":
+        {
+          "coding":
+          [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "710081004",
+              "display": "Smoking cessation therapy"
+            }
+          ],
+          "text": "Smoking cessation therapy"
+        },
+        "priority": "routine",
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "710081004",
+              "display": "Smoking cessation therapy"
+            }
+          ],
+          "text": "Smoking cessation therapy"
+        },
+        "authoredOn": "2026-01-20T09:17:16.974Z",
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "occurrenceTiming":
+        {
+          "repeat":
+          {
+            "boundsPeriod":
+            {
+              "start": "2026-01-20T09:16:58.950Z"
+            }
+          }
+        },
+        "requester":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        },
+        "encounter":
+        {
+          "reference": "Encounter/63fb8721-9c53-4005-8cfc-4a2f9d126992"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/0719e4af-4367-79c2-f5fe-6d317aa03ca3",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "0719e4af-4367-79c2-f5fe-6d317aa03ca3",
+        "meta":
+        {
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/ServiceRequestProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:21:35.683Z"
+        },
+        "status": "active",
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "108252007",
+                "display": "Laboratory procedures"
+              }
+            ],
+            "text": "Laboratory procedures"
+          }
+        ],
+        "intent": "order",
+        "code":
+        {
+          "coding":
+          [
+            {
+              "system": "http://loinc.org",
+              "code": "22748-8",
+              "display": "Cholesterol in LDL [Moles/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Cholesterol in LDL in Serum or Plasma"
+        },
+        "authoredOn": "2026-01-20T09:20:16.961Z",
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46",
+          "display": "Atlas Şentürk"
+        },
+        "occurrenceTiming":
+        {
+          "repeat":
+          {
+            "boundsPeriod":
+            {
+              "start": "2026-01-20T09:20:16.961Z",
+              "end": "2026-02-20T09:20:16.961Z"
+            }
+          }
+        },
+        "requester":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        },
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/title",
+            "valueString": "Cholesterol in LDL in Serum or Plasma"
+          }
+        ],
+        "encounter":
+        {
+          "reference": "Encounter/63fb8721-9c53-4005-8cfc-4a2f9d126992"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/ServiceRequest/085a934e-f730-df08-2352-8706e7c77c21",
+      "resource":
+      {
+        "resourceType": "ServiceRequest",
+        "id": "085a934e-f730-df08-2352-8706e7c77c21",
+        "meta":
+        {
+          "profile":
+          [
+            "https://kroniq.health/StructureDefinition/ServiceRequestProfile"
+          ],
+          "versionId": "1",
+          "lastUpdated": "2026-01-20T09:21:35.683Z"
+        },
+        "status": "active",
+        "category":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "445536008",
+                "display": "Assessment using assessment scale"
+              }
+            ],
+            "text": "Assessment using assessment scale"
+          }
+        ],
+        "intent": "order",
+        "authoredOn": "2026-01-20T09:21:16.134Z",
+        "extension":
+        [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference":
+            {
+              "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/servicerequest-questionnaireRequest",
+            "valueReference":
+            {
+              "reference": "Questionnaire/5c41e395-6334-4b1b-beb0-709858643b1a",
+              "display": "WHO-5"
+            }
+          },
+          {
+            "url": "https://kroniq.health/StructureDefinition/title",
+            "valueString": "WHO-5"
+          }
+        ],
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46",
+          "display": "Atlas Şentürk"
+        },
+        "occurrenceTiming":
+        {
+          "repeat":
+          {
+            "boundsPeriod":
+            {
+              "start": "2026-01-20T09:21:16.134Z",
+              "end": "2026-02-20T09:21:16.134Z"
+            }
+          }
+        },
+        "requester":
+        {
+          "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+          "display": "Can YILMAZ"
+        },
+        "performer":
+        [
+          {
+            "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46",
+            "display": "Atlas Şentürk"
+          }
+        ],
+        "encounter":
+        {
+          "reference": "Encounter/63fb8721-9c53-4005-8cfc-4a2f9d126992"
+        }
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Encounter/63fb8721-9c53-4005-8cfc-4a2f9d126992",
+      "resource":
+      {
+        "resourceType": "Encounter",
+        "id": "63fb8721-9c53-4005-8cfc-4a2f9d126992",
+        "meta":
+        {
+          "source": "https://kroniq.health",
+          "tag":
+          [
+            {
+              "system": "https://kroniq.health/CodeSystem/disease-module",
+              "code": "cvd"
+            }
+          ],
+          "versionId": "2",
+          "lastUpdated": "2026-01-20T09:21:37.145Z"
+        },
+        "class":
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "type":
+        [
+          {
+            "coding":
+            [
+              {
+                "system": "https://kroniq.health/CodeSystem/care-flows",
+                "code": "cvd-monitoring"
+              }
+            ]
+          }
+        ],
+        "subject":
+        {
+          "reference": "Patient/d5369ce3-5e05-4896-9355-1de9d090fe46"
+        },
+        "episodeOfCare":
+        [
+          {
+            "reference": "EpisodeOfCare/c5efbda1-5d02-42cd-b2bc-0ec5419f3a4e"
+          }
+        ],
+        "period":
+        {
+          "start": "2026-01-20T09:14:17.741Z",
+          "end": "2026-01-20T09:21:35.954Z"
+        },
+        "participant":
+        [
+          {
+            "individual":
+            {
+              "reference": "Practitioner/d1bd226f-c4ed-4f15-b366-0d2005d83c47",
+              "display": "Can YILMAZ"
+            }
+          }
+        ],
+        "serviceProvider":
+        {
+          "reference": "Organization/hospital1",
+          "display": "Con Hospital"
+        },
+        "status": "finished",
+        "diagnosis":
+        [
+          {
+            "condition":
+            {
+              "reference": "Condition/f84b72d4-ebb9-691b-87bc-89db02a60e88"
+            }
+          },
+          {
+            "condition":
+            {
+              "reference": "Condition/cc57e78d-2073-5cd0-0b65-9ceb03656c2d"
+            }
+          }
+        ]
+      },
+      "search":
+      {
+        "mode": "include"
+      }
+    }
+  ]
+}

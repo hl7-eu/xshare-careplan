@@ -1,0 +1,17 @@
+@startuml
+title Care Plan Application participants
+
+' ========= participants =========
+participant "Patient App" as PAT <<mobile>>
+participant "HCP App" as HCP <<clinical>>
+participant "EHR-S" as EHR_S <<backend>>
+note right of EHR_S
+EHR/Order System
+(FHIR server)
+end note
+
+PAT <-> EHR_S
+HCP <-> EHR_S
+
+
+@enduml
