@@ -2,10 +2,10 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>XShareCarePlanModel &lt;-&gt; xShare Care Plan</title>
+    <title>XShareCarePlanModel to xShare CarePlan map</title>
   </head>
   <body>
-    <div class="model-map-block">
+<!--     <div class="model-map-block">
       <div class="callout-wrapper">
         <div class="callout-box">
           <strong>Ongoing alignment:</strong>
@@ -14,7 +14,7 @@
               Guide to maintain alignment with the evolving EHDS specifications.
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="model-map-block">
       <div class="callout-wrapper">
         <div class="callout-box">
@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-    <h3>XShareCarePlanModel &lt;-&gt; xShare Care Plan</h3>
+    <h3>XShareCarePlanModel to xShare CarePlan map</h3>
     <a> </a>
     <p></p>
     <p>
@@ -36,7 +36,7 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="StructureDefinition-careplan-draft-logical.html">
+          <a href="StructureDefinition-Careplan-logical.html">
         XShareCarePlanModel
           </a>
         </li>
@@ -50,8 +50,8 @@
     </div>
     <p></p>
     <div class="table-wrap">
-      <table summary="XShareCarePlanModel &lt;-&gt; xShare Care Plan">
-        <caption>XShareCarePlanModel &lt;-&gt; xShare Care Plan</caption>
+      <table summary="XShareCarePlanModel to xShare CarePlan map">
+        <caption>XShareCarePlanModel to xShare CarePlan map</caption>
         <thead>
           <tr>
             <th colspan="2" class="src-head">XShareCarePlanModel (Logical Model)</th>
@@ -233,8 +233,8 @@
         </tbody>
       </table>
     </div>
-    <p style="margin-top:2rem;color:#555;">
+<!--     <p style="margin-top:2rem;color:#555;">
       Return to overview: <a href="modelmap.html">EHDS Logical Models &lt;-&gt; FHIR Profiles</a>
-    </p>
+    </p> -->
   </body>
 </div>

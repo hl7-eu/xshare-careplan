@@ -1,4 +1,4 @@
-The **technical** domain describes the technical stack and the infrastructure required to support the use cases for research of the IPS+ described in this IG.
+The **technical** domain describes the technical stack and the infrastructure required to support the use cases for research of the Care Plan described in this IG.
 
 <div>
 <p> </p>

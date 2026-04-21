@@ -95,18 +95,20 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Table of Contents: toc.html
+ # Table of Contents: toc.html
  # X-Bundle registry: https://x-bundles.ehr-exchange-format.eu/
   Business: business.html
 #    Overview: business.html
   Application: application.html
 #    Overview: application.html
   Data:
-    Logical Model: StructureDefinition-careplan-draft-logical.html
+    Logical Model: StructureDefinition-Careplan-logical.html
+    Xt-EHR Care Plan: https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSCarePlan.html
+    Model Mapping: map-careplan.html
     Content: content.html
   Technology:
     Overview: technical.html
-    Care Plan Mapping: map-careplan.html
+
   Downloads: downloads.html
   Artifacts: artifacts.html
   About: about.html

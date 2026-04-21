@@ -1,70 +1,67 @@
-<div xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
   <blockquote class="dragon">
-    <p>The specification herewith documented is a working specification. 
-    No liability can be inferred from the use or misuse of this specification, or its consequences.</p>
+    <p>The specification herewith documented is a working specification.
+      No liability can be inferred from the use or misuse of this specification, or its
+      consequences.</p>
   </blockquote>
 
   <a name="scope"></a>
 
   <h3 id="scope">Scope</h3>
-  <p>
-    This guide specifies how - based on the input collected by the xShare project - a <b>Care Plan</b> should be represented in HL7 FHIR.
-  </p>
+  <p> This guide specifies how - based on the input collected by the xShare project - a <b>Care Plan</b>
+    should be represented in HL7 FHIR. </p>
 
 
-  <a name="purpose"></a>
+  <a name="purpose"> </a>
 
   <h3 id="purpose">Purpose</h3>
   <p>
-    This FHIR Implementation guide is designed to assist users in implementing Care Plans. 
+    This FHIR Implementation guide is designed to assist users in implementing Care Plans.
   </p>
-  <p><i>
-    In the context of the European Health Data Space (EHDS), this guide supports extending the European Electronic Health Record Exchange Format (EHRxF) to represent Care Plans as a dedicated Health Information Domain. It focuses on care plans as structured, standardised, guideline-informed and machine-readable artefacts that can support coordinated multidisciplinary care, continuity across settings and borders, and better use of health data for decision support, quality improvement and research.
-  </i></p>
-  
+  <p>
+    In the context of the European Health Data Space (EHDS), this guide supports extending the
+    European Electronic Health Record Exchange Format (EHRxF) to represent Care Plans as a dedicated
+    Health Information Domain. It focuses on care plans as structured, standardised,
+    guideline-informed and machine-readable artefacts that can support coordinated multidisciplinary
+    care, continuity across settings and borders, and better use of health data for decision
+    support, quality improvement and research.
+  </p>
 
-  <a name="how-to-read"></a>
+
+  <a name="how-to-read"> </a>
 
   <h3 id="how-to-read">How to read</h3>
   <p>
-    The content of this guide is organized following the BDAT (business, data, application, and technology) model, as illustrated in the figure below.
+    The content of this guide is organized following the BDAT (business, data, application, and
+    technology) model, as illustrated in the figure below.
   </p>
 
 
   <div>
 
     <figure>
-      <p></p>
-       {% include bdat.svg %}
-      <figcaption>Fig. 1: Navigating this guide</figcaption>
+      <p></p> {% include bdat.svg %} <figcaption>Fig. 1: Navigating this guide</figcaption>
     </figure>
   </div>
   <p>Where:
   </p>
   <ul>
-    <li>
-    The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/business.html">
-      <strong>business domain</strong>
-    </a> describes the business rationale of the use cases in clinical research that rely on the Care Plan use case.
-  </li>
-  <li>
-    The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/application.html">
-    <strong>application domain</strong>
-  </a> describes three use cases in clinical research in detail.
-</li>
-<li>
-    The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/content.html">
-  <strong>data domain</strong>
-</a> describes the Care Plan data model.
-</li>
-<li>
-    The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/technical.html">
-<strong>technology domain</strong>
-</a> describes the technology stack, the use cases flow referencing the infrastructure components required to support these use cases.
-</li>
-</ul>
+    <li> The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/business.html">
+        <strong>business domain</strong>
+      </a> describes the business rationale of the use cases
+      that rely on the Care Plan use case. </li>
+    <li> The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/application.html">
+        <strong>application domain</strong>
+      </a> describes three use cases in detail. </li>
+    <li> The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/content.html">
+        <strong>data domain</strong>
+      </a> describes the Care Plan data model. </li>
+    <li> The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/technical.html">
+        <strong>technology domain</strong>
+      </a> describes the technology stack, the use cases
+      flow referencing the infrastructure components required to support these use cases. </li>
+  </ul>
 
-<p></p>
+  <p> </p>
 </div>

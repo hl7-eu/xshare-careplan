@@ -1,5 +1,5 @@
 
-The **business domain** describes the overview and business use cases in research that will rely on the IPS+.
+The **business domain** describes the overview and business use cases that will rely on the Care Plan.
 
 <div>
 {% include bdat-b.svg %}
@@ -40,6 +40,8 @@ This implies that Care Plans are not merely narrative documents, but structured 
 
 #### Actors
 
+The business actors involved in the Care Plan domain are the patient, health care professionals, caregivers, relatives and the health care provider organisation. Within the professional role, clinicians and nurses are modelled as specialised health care professionals, reflecting that some responsibilities are shared while others, such as defining the care plan, are more role-specific.
+
 <div>
 <p> </p>
 {% include bus-actors.svg %}
@@ -47,6 +49,8 @@ This implies that Care Plans are not merely narrative documents, but structured 
 </div>
 
 #### Patient
+
+The patient is positioned as an active participant in the care plan lifecycle. According to the diagram, the patient can search for and view the care plan, share it when needed, and execute and record assigned actions. Viewing is treated as a common included capability that supports the broader search-and-see interaction.
 
 <div>
 <p> </p>
@@ -56,6 +60,8 @@ This implies that Care Plans are not merely narrative documents, but structured 
 
 #### Health Care Professional
 
+Health care professionals interact with the care plan both operationally and clinically. The shared professional role can search for and view the plan, share it, execute and record actions, and manage ongoing care plan execution; management includes viewing, updating and monitoring outcomes. The clinician role adds the specific responsibility of defining the care plan, while nurses participate through the broader professional capabilities.
+
 <div>
 <p> </p>
 {% include hcp-use-cases.svg %}
@@ -63,6 +69,8 @@ This implies that Care Plans are not merely narrative documents, but structured 
 </div>
 
 #### Caregiver
+
+Caregivers support day-to-day execution of the care plan. The diagram shows that they can search for and view the care plan, share it with authorised participants, execute and record actions, and monitor outcomes, which positions them as an important bridge between planned care and actual care delivery in daily life.
 
 <div>
 <p> </p>
@@ -72,6 +80,8 @@ This implies that Care Plans are not merely narrative documents, but structured 
 
 #### Relatives
 
+Relatives have a more limited but still relevant role. They can search for and view the care plan and execute and record actions, which suggests involvement in practical support activities while leaving plan management and broader coordination responsibilities to formal care actors.
+
 <div>
 <p> </p>
 {% include rel-use-cases.svg %}
@@ -80,11 +90,10 @@ This implies that Care Plans are not merely narrative documents, but structured 
 
 #### Organization
 
+The health care provider organisation has an oversight-oriented role in the business view. It is shown as able to search for and view care plans and to monitor outcomes, supporting organisational supervision, service coordination and assessment of whether care activities are progressing as intended.
+
 <div>
 <p> </p>
 {% include org-use-cases.svg %}
 <p> </p>
 </div>
-
-
-_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum._
