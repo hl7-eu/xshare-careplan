@@ -56,7 +56,7 @@
           <tr>
             <th colspan="2" class="src-head">XShareCarePlanModel (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">CarePlan</th>
+            <th colspan="4" class="tgt-head">Target FHIR representation</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
@@ -123,7 +123,15 @@
             <td>equivalent</td>
             <td>CarePlan</td><td>careTeam</td>
             <td>CareTeam(s) responsible for the plan.</td>
-            <td></td>
+            <td>References the CareTeam resource(s) carrying the participants.</td>
+          </tr>
+          <tr>
+            <td>careTeam.member[x]</td>
+            <td>References to practitioners, organizations, or related persons involved in the care plan.</td>
+            <td>related-to</td>
+            <td>CareTeam</td><td>participant.member</td>
+            <td>Member of the care team.</td>
+            <td>Reached through CarePlan.careTeam.</td>
           </tr>
           <tr>
             <td>subject</td>
@@ -143,27 +151,51 @@
           </tr>
           <tr>
             <td>supportingInfo</td>
-            <td>Evidence/supporting information used as basis for this care plan.</td>
+            <td>Evidence/supporting information used as the basis for this care plan.</td>
             <td>equivalent</td>
             <td>CarePlan</td><td>supportingInfo</td>
             <td>Supporting information for the plan.</td>
             <td></td>
           </tr>
           <tr>
-            <td>treatmentGoal</td>
-            <td>Goals defined by the care team.</td>
+            <td>goal</td>
+            <td>Goals defined for the care plan, including treatment goals and patient goals.</td>
             <td>related-to</td>
             <td>CarePlan</td><td>goal</td>
             <td>Goals addressed by the plan.</td>
-            <td>Care team goals and patient goals share the same target element.</td>
+            <td>CarePlan.goal references Goal resources; goal details are represented in the referenced Goal.</td>
           </tr>
           <tr>
-            <td>patientGoal</td>
-            <td>Goals expressed by the patient.</td>
+            <td>goal.category</td>
+            <td>Categorization of the goal, e.g. treatment goal or patient goal.</td>
+            <td>equivalent</td>
+            <td>Goal</td><td>category</td>
+            <td>Category of the goal.</td>
+            <td>Reached through CarePlan.goal.</td>
+          </tr>
+          <tr>
+            <td>goal.description</td>
+            <td>Description of the goal.</td>
+            <td>equivalent</td>
+            <td>Goal</td><td>description</td>
+            <td>Code or text describing the goal.</td>
+            <td>Map the logical string to Goal.description.text when no code is available.</td>
+          </tr>
+          <tr>
+            <td>goal.target</td>
+            <td>Target of the goal.</td>
+            <td>equivalent</td>
+            <td>Goal</td><td>target.detailCodeableConcept</td>
+            <td>Target value or state to be achieved.</td>
+            <td>Use the appropriate Goal.target.detail[x] choice if a more specific type is available.</td>
+          </tr>
+          <tr>
+            <td>goal.due</td>
+            <td>Date by which the goal should be met or reviewed.</td>
             <td>related-to</td>
-            <td>CarePlan</td><td>goal</td>
-            <td>Goals addressed by the plan.</td>
-            <td>Patient-expressed goals are included in CarePlan.goal.</td>
+            <td>Goal</td><td>target.dueDate</td>
+            <td>Date by which the goal should be met.</td>
+            <td>Use Goal.statusDate instead if a future refinement needs to record when an achieved/improving status took effect.</td>
           </tr>
           <tr>
             <td>activity</td>
@@ -176,27 +208,18 @@
           <tr>
             <td>activity.workflowStatus</td>
             <td>Workflow status of the activity.</td>
-            <td>equivalent</td>
+            <td>related-to</td>
             <td>CarePlan</td><td>activity.reference</td>
-            <td>Status of the activity.</td>
-            <td>The status of the activity is captured in the referenced resource.</td>
+            <td>Reference to the activity resource.</td>
+            <td>The activity status is captured in the referenced resource, e.g. ServiceRequest.status, Task.status, Procedure.status, or Appointment.status.</td>
           </tr>
           <tr>
             <td>activity.narrative</td>
             <td>Human-readable narrative describing the activity.</td>
-            <td>equivalent</td>
-            <td>CarePlan</td><td>activity.reference</td>
-            <td></td>
-            <td>A narrative description of the activity is captured in the text element if the referenced resource.</td>
-          </tr>
-          <tr>
-            <td>activity.narrative</td>
-            <td>Human-readable narrative describing the activity.</td>
-            <td>equivalent</td>
-            <td>CarePlan</td>
-            <td>text</td>
-            <td></td>
-            <td>A purely textual description of the CarePlan should be provided in the text element</td>
+            <td>related-to</td>
+            <td>CarePlan</td><td>activity.progress</td>
+            <td>Notes about the progress of the activity.</td>
+            <td>Activity-specific narrative may also be represented in the referenced resource narrative.</td>
           </tr>
           <tr>
             <td>activity.structured</td>

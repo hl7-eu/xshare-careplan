@@ -4,9 +4,9 @@ name:  XshareCarePlanIg
 title: xShare Project CarePlan
 description: The xShare CarePlan HL7 FHIR IG provides guidelines on how to use the CarePlans.
 status: draft # draft | active | retired | unknown
-version: 0.1.0-ci #
+version: 1.0.0-ci #
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2024+
+copyrightYear: 2025+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: 	http://unstats.un.org/unsd/methods/m49/m49.htm#150 "Europe" # https://www.hl7.org/fhir/valueset-jurisdiction.html
@@ -101,13 +101,15 @@ menu:
 #    Overview: business.html
   Application: application.html
 #    Overview: application.html
-  Data:
-    Logical Model: StructureDefinition-Careplan-logical.html
-    Xt-EHR Care Plan: https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSCarePlan.html
-    Model Mapping: map-careplan.html
-    Content: content.html
+  Data: content.html
+   # Content: content.html
+   # Logical Model: StructureDefinition-Careplan-logical.html
+   # Xt-EHR Care Plan: https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSCarePlan.html
+   # Model Mapping: map-careplan.html
   Technology:
     Overview: technical.html
+    Model Mapping: map-careplan.html
+    Content: content.html
 
   Downloads: downloads.html
   Artifacts: artifacts.html

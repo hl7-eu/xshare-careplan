@@ -5,7 +5,7 @@
 Logical: XShareCarePlanModel
 Id: Careplan-logical
 Title: "Care Plan (Logical Model)"
-Description: "Logical model representing a draft Care Plan structure, including ownership, goals, evidence, and activities with outcomes."
+Description: "Logical model representing a Care Plan structure with metadata, care team participation, subject and clinical context, goals, supporting information, planned or performed activities, and activity outcomes."
 * ^status = #draft
 * ^experimental = true
 
@@ -17,7 +17,7 @@ Description: "Logical model representing a draft Care Plan structure, including 
 * period 0..1 Period "Period" "Time period the care plan covers."
 * author[x] 0..* EHDSHealthProfessional or EHDSOrganisation "Author" "Person or organization responsible for creating the care plan."
 
-* careTeam 0..* BackboneElement "Care team / organization in charge" "CareTeam or responsible organization having charge of the plan."
+* careTeam 0..* BackboneElement "Care team / organization in charge" "Care team or responsible organization in charge of the plan."
 * careTeam.member[x] 0..* EHDSHealthProfessional or EHDSOrganisation "Care team member" "References to practitioners, organizations, or related persons involved in the care plan."
 
 // ---------- Subject / clinical context ----------
@@ -26,20 +26,15 @@ Description: "Logical model representing a draft Care Plan structure, including 
 * reason 0..* EHDSCondition "Reason (problem/health concern)" "Problems/health concerns prompting the care plan."
 
 
-* supportingInfo 0..* Reference(Resource) "Evidence / supporting information" "Evidence or other supporting information used as basis for this care plan."
-
-* goal 0..* BackboneElement "Goal" "Goals defined for the care plan. Treatment goals defined by the care team and not always visible to the patient Treatment goals. Patient goals goals expressed by the patient and visible to the patient."
-
-* goal.category 0..1 CodeableConcept "Goal category" "Categorization of the goal (e.g., Treatment goals, Patient goals)."
-* goal.description 1..1 string "Goal description" "Description of the goal."
-* goal.target 0..1 CodeableConcept "Goal target" "Target of the goal."
-* goal.due 0..1 date "Goal due date" "Date by which the goal achievment status took effect (I.e. When achieved, when improving, etc.)."
-
+* supportingInfo 0..* Reference(Resource) "Evidence / supporting information" "Evidence or other supporting information used as the basis for this care plan."
 
 // ---------- Goals ----------
-/* * treatmentGoal 0..* CodeableConcept "Treatment goals" "Goals defined by the care team; not always visible to the patient."
+* goal 0..* BackboneElement "Goal" "Goals defined for the care plan, including treatment goals defined by the care team and patient goals expressed by the patient."
 
-* patientGoal 0..* CodeableConcept "Patient goals" "Goals expressed by the patient; visible to the patient." */
+* goal.category 0..1 CodeableConcept "Goal category" "Categorization of the goal (e.g., treatment goal, patient goal)."
+* goal.description 1..1 string "Goal description" "Description of the goal."
+* goal.target 0..1 CodeableConcept "Goal target" "Target of the goal."
+* goal.due 0..1 date "Goal due date" "Date by which the goal should be met or reviewed."
 
 
 // ---------- Activities ----------
