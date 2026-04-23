@@ -1,6 +1,13 @@
 The **technical** domain describes how the Care Plan content defined by this guide can be realised in an exchange implementation.
 
-> **Scope of this version:** this version of the guide focuses on the content specification for Care Plans. It defines the logical model, the implementable FHIR profile and the mapping between them. Detailed exchange transitions, workflow orchestration, security patterns, API interactions and deployment architecture are outside the scope of this version and may be added in future versions.
+<div class="model-map-block">
+    <div class="callout-wrapper">
+    <div class="callout-box">
+        <strong>Scope of this version:</strong>
+            This version of the guide focuses on the content specification for Care Plans. It defines the logical model, the implementable FHIR profile and the mapping between them. Detailed exchange transitions, workflow orchestration, security patterns, API interactions and deployment architecture are outside the scope of this version and may be added in future versions.
+    </div>
+    </div>
+</div>
 
 <div>
 <p> </p>

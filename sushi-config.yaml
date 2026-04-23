@@ -106,14 +106,16 @@ menu:
    # Logical Model: StructureDefinition-Careplan-logical.html
    # Xt-EHR Care Plan: https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSCarePlan.html
    # Model Mapping: map-careplan.html
-  Technology:
-    Overview: technical.html
-    Model Mapping: map-careplan.html
-    Content: content.html
+  Technology: technical.html
+    # Overview: technical.html
+    # Model Mapping: map-careplan.html
+    # Content: content.html
 
   Downloads: downloads.html
   Artifacts: artifacts.html
   About: about.html
+  Xt-EHR: https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSCarePlan.html
+
 
   # Button: button.html
  # MPD: 

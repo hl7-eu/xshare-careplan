@@ -30,6 +30,11 @@
   This page explains how conceptual elements from the XShareCarePlanModel logical model are expressed
   in the corresponding xShare Care Plan profile used by this Implementation Guide.
     </p>
+    <p>
+  The revised logical model now derives from <code>EHDSCarePlan</code>. Elements inherited from that parent
+  remain mapped here where they are relevant to the xShare Care Plan profile, while newly introduced or
+  renamed elements are aligned with the current R4 representation used by this guide.
+    </p>
     <p></p>
     <div class="table-wrap">
       <strong>Mapping Context</strong>
@@ -75,7 +80,7 @@
             <td>equivalent</td>
             <td>CarePlan</td><td>title</td>
             <td>Title of the care plan.</td>
-            <td></td>
+            <td>Inherited from the <code>EHDSCarePlan</code> parent logical model.</td>
           </tr>
           <tr>
             <td>description</td>
@@ -83,7 +88,7 @@
             <td>equivalent</td>
             <td>CarePlan</td><td>description</td>
             <td>Description of the care plan.</td>
-            <td></td>
+            <td>Inherited from the <code>EHDSCarePlan</code> parent logical model.</td>
           </tr>
           <tr>
             <td>status</td>
@@ -91,7 +96,23 @@
             <td>equivalent</td>
             <td>CarePlan</td><td>status</td>
             <td>Current status of the care plan.</td>
-            <td></td>
+            <td>Inherited from the <code>EHDSCarePlan</code> parent logical model.</td>
+          </tr>
+          <tr>
+            <td>realize[x]</td>
+            <td>Identifier or reference to the guidelines that this care plan realizes.</td>
+            <td>related-to</td>
+            <td>CarePlan</td><td>instantiatesUri</td>
+            <td>URI identifying an external protocol, guideline, or definition instantiated by the plan.</td>
+            <td>Direct URI values map to <code>CarePlan.instantiatesUri</code>. Logical-model references are broader than the current xShare R4 representation and would need additional profiling if used.</td>
+          </tr>
+                    <tr>
+            <td>realize[x]</td>
+            <td>Identifier or reference to the guidelines that this care plan realizes.</td>
+            <td>related-to</td>
+            <td>CarePlan</td><td>instantiatesCanonical</td>
+            <td>Canonical identifier for the guideline instantiated by the plan.</td>
+            <td>Direct canonical values map to <code>CarePlan.instantiatesCanonical</code>. Logical-model references are broader than the current xShare R4 representation and would need additional profiling if used.</td>
           </tr>
           <tr>
             <td>category</td>
@@ -107,7 +128,7 @@
             <td>equivalent</td>
             <td>CarePlan</td><td>period</td>
             <td>Period over which the care plan is in effect.</td>
-            <td></td>
+            <td>Inherited from the <code>EHDSCarePlan</code> parent logical model.</td>
           </tr>
           <tr>
             <td>author[x]</td>
@@ -115,7 +136,7 @@
             <td>equivalent</td>
             <td>CarePlan</td><td>author</td>
             <td>Who authored the care plan.</td>
-            <td></td>
+            <td>Inherited from the <code>EHDSCarePlan</code> parent logical model.</td>
           </tr>
           <tr>
             <td>careTeam</td>
@@ -139,7 +160,7 @@
             <td>equivalent</td>
             <td>CarePlan</td><td>subject</td>
             <td>Who the care plan is for.</td>
-            <td></td>
+            <td>Inherited from the <code>EHDSCarePlan</code> parent logical model.</td>
           </tr>
           <tr>
             <td>reason</td>
@@ -147,7 +168,7 @@
             <td>equivalent</td>
             <td>CarePlan</td><td>addresses</td>
             <td>Conditions/concerns addressed by the plan.</td>
-            <td>Mapped to Condition references in CarePlan.addresses.</td>
+            <td>Inherited from the <code>EHDSCarePlan</code> parent logical model and mapped to Condition references in <code>CarePlan.addresses</code>.</td>
           </tr>
           <tr>
             <td>supportingInfo</td>
@@ -158,15 +179,15 @@
             <td></td>
           </tr>
           <tr>
-            <td>goal</td>
+            <td>goalDetails</td>
             <td>Goals defined for the care plan, including treatment goals and patient goals.</td>
             <td>related-to</td>
             <td>CarePlan</td><td>goal</td>
             <td>Goals addressed by the plan.</td>
-            <td>CarePlan.goal references Goal resources; goal details are represented in the referenced Goal.</td>
+            <td><code>CarePlan.goal</code> references Goal resources; the logical-model goal details are represented in the referenced Goal.</td>
           </tr>
           <tr>
-            <td>goal.category</td>
+            <td>goalDetails.category</td>
             <td>Categorization of the goal, e.g. treatment goal or patient goal.</td>
             <td>equivalent</td>
             <td>Goal</td><td>category</td>
@@ -174,23 +195,15 @@
             <td>Reached through CarePlan.goal.</td>
           </tr>
           <tr>
-            <td>goal.description</td>
-            <td>Description of the goal.</td>
-            <td>equivalent</td>
-            <td>Goal</td><td>description</td>
-            <td>Code or text describing the goal.</td>
-            <td>Map the logical string to Goal.description.text when no code is available.</td>
-          </tr>
-          <tr>
-            <td>goal.target</td>
+            <td>goalDetails.target</td>
             <td>Target of the goal.</td>
             <td>equivalent</td>
-            <td>Goal</td><td>target.detailCodeableConcept</td>
-            <td>Target value or state to be achieved.</td>
-            <td>Use the appropriate Goal.target.detail[x] choice if a more specific type is available.</td>
+            <td>Goal</td><td>target</td>
+            <td>Target value, measure, or state to be achieved.</td>
+            <td>Use the appropriate <code>Goal.target</code> parts, including <code>detail[x]</code>, depending on how the target is represented.</td>
           </tr>
           <tr>
-            <td>goal.due</td>
+            <td>goalDetails.due</td>
             <td>Date by which the goal should be met or reviewed.</td>
             <td>related-to</td>
             <td>Goal</td><td>target.dueDate</td>
@@ -198,15 +211,23 @@
             <td>Use Goal.statusDate instead if a future refinement needs to record when an achieved/improving status took effect.</td>
           </tr>
           <tr>
-            <td>activity</td>
-            <td>Planned or performed activities as part of the care plan.</td>
+            <td>activity[x]</td>
+            <td>Reference to the activity resource represented in the plan.</td>
             <td>equivalent</td>
-            <td>CarePlan</td><td>activity</td>
-            <td>Activities that are part of the plan.</td>
-            <td></td>
+            <td>CarePlan</td><td>activity.reference</td>
+            <td>Reference to the request, task, encounter, procedure, or other activity resource.</td>
+            <td>The revised logical model constrains the activity choice to references.</td>
           </tr>
           <tr>
-            <td>activity.workflowStatus</td>
+            <td>detailsActivity</td>
+            <td>Planned or performed activities as part of the care plan.</td>
+            <td>related-to</td>
+            <td>CarePlan</td><td>activity</td>
+            <td>Activities that are part of the plan.</td>
+            <td>Acts as the logical grouping for the mapped activity components below.</td>
+          </tr>
+          <tr>
+            <td>detailsActivity.workflowStatus</td>
             <td>Workflow status of the activity.</td>
             <td>related-to</td>
             <td>CarePlan</td><td>activity.reference</td>
@@ -214,7 +235,7 @@
             <td>The activity status is captured in the referenced resource, e.g. ServiceRequest.status, Task.status, Procedure.status, or Appointment.status.</td>
           </tr>
           <tr>
-            <td>activity.narrative</td>
+            <td>detailsActivity.narrative</td>
             <td>Human-readable narrative describing the activity.</td>
             <td>related-to</td>
             <td>CarePlan</td><td>activity.progress</td>
@@ -222,36 +243,20 @@
             <td>Activity-specific narrative may also be represented in the referenced resource narrative.</td>
           </tr>
           <tr>
-            <td>activity.structured</td>
-            <td>Reference to a formal request/performance.</td>
+            <td>detailsActivity.outcome</td>
+            <td>Outcome(s) or progress notes captured for the activity.</td>
             <td>equivalent</td>
-            <td>CarePlan</td><td>activity.reference</td>
-            <td>Reference to a formal artifact.</td>
-            <td>References to ServiceRequest, Appointment, Task, etc.</td>
+            <td>CarePlan</td><td>activity.progress</td>
+            <td>Annotation(s) describing progress or outcome.</td>
+            <td>The revised logical model expresses outcome/progress as <code>Annotation</code> rather than separate summary/evidence sub-elements.</td>
           </tr>
           <tr>
-            <td>activity.outcome</td>
-            <td>Outcome(s) captured for the activity.</td>
+            <td>detailsActivity.performed</td>
+            <td>References to the performed activities.</td>
             <td>related-to</td>
-            <td>CarePlan</td><td>activity</td>
-            <td>Action to occur as part of plan</td>
-            <td>See outcome.summary and outcome.evidence mappings below for details.</td>
-          </tr>
-          <tr>
-            <td>activity.outcome.summary</td>
-            <td>Short textual summary of the outcome.</td>
-            <td>equivalent</td>
-            <td>CarePlan</td><td>activity.outcomeCodeableConcept</td>
-            <td>Outcome summary (coded).</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>activity.outcome.evidence</td>
-            <td>Evidence supporting the outcome.</td>
-            <td>equivalent</td>
             <td>CarePlan</td><td>activity.outcomeReference</td>
-            <td>Outcome evidence references.</td>
-            <td></td>
+            <td>References to resources documenting performed outcomes or events.</td>
+            <td>Used when the plan links to the activity that was actually performed, such as a Procedure or Encounter.</td>
           </tr>
         </tbody>
       </table>

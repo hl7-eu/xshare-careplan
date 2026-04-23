@@ -19,6 +19,9 @@ Description: "CarePlan profile aligned with the Care Plan logical model."
 * created ^short = "Date the plan was created"
 * author ^short = "Who the plan is attributed to"
 * careTeam ^short = "Participants in the care plan"
+* instantiatesCanonical ^short = "Instantiated Canonical"
+* instantiatesUri ^short = "Instantiated URI"
+
 
 // ---------- Subject / clinical context ----------
 * subject 1..1
@@ -26,6 +29,8 @@ Description: "CarePlan profile aligned with the Care Plan logical model."
 * addresses 0..*
 * addresses only Reference(ConditionEuCore)
 * supportingInfo ^short = "Information considered as part of the care plan"
+
+
 
 // ---------- Goals ----------
 
