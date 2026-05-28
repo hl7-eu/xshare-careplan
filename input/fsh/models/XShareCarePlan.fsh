@@ -4,11 +4,10 @@
 
 Logical: XShareCarePlanModel
 Parent: EHDSCarePlan
-Id: Careplan-logical
+Id: XShareCarePlan
 Title: "Care Plan (Logical Model)"
 Description: "Logical model representing a Care Plan structure with metadata, care team participation, subject and clinical context, goals, supporting information, planned or performed activities, and activity outcomes."
-* ^status = #draft
-* ^experimental = true
+
 
 // DErive from EHDS care plan model
 
@@ -55,5 +54,5 @@ Description: "Logical model representing a Care Plan structure with metadata, ca
 
 /* * pluto.structured 0..1 Reference(Resource) "Reference to formal artifact" "Reference to a formal request/performance (e.g., ServiceRequest, Procedure, Task)." */
 
-* detailsActivity.outcome 0..* Annotation "Outcome, Progresses" "Outcome(s) or progresses captured for the activity."
+* detailsActivity.progress 0..* Annotation "Outcome, Progresses" "Outcome(s) or progresses captured for the activity."
 * detailsActivity.performed 0..* Reference "Performed activity" "References to the performed activities."

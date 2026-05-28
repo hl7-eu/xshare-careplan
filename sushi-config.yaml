@@ -20,8 +20,8 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-   xtehr.eu.ehds.models: current
-   hl7.fhir.eu.base: current
+   xtehr.eu.ehds.models: 1.0.0
+   hl7.fhir.eu.base: 2.0.0
 #  hl7.fhir.extensions.r5: 4.0.1
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -103,7 +103,7 @@ menu:
 #    Overview: application.html
   Data: content.html
    # Content: content.html
-   # Logical Model: StructureDefinition-Careplan-logical.html
+   # Logical Model: StructureDefinition-XShareCarePlan.html
    # Xt-EHR Care Plan: https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSCarePlan.html
    # Model Mapping: map-careplan.html
   Technology: technical.html

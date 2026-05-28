@@ -7,8 +7,7 @@ Parent: CarePlan
 Id: xshare-careplan
 Title: "xShare Care Plan"
 Description: "CarePlan profile aligned with the Care Plan logical model."
-* ^status = #draft
-* ^experimental = true
+
 
 // ---------- Core metadata ----------
 * title ^short = "Care Plan Title"
@@ -41,13 +40,13 @@ Description: "CarePlan profile aligned with the Care Plan logical model."
 // ---------- Activities ----------
 * activity 0..*
 
-* activity.reference 0..1
 * activity.reference ^short = "Activity details defined in specific resource."
 * activity.progress ^short = "Notes about the progress of the activity"
 
 * activity.outcomeCodeableConcept ^short = "Codeable Outcome summary"
 * activity.outcomeReference ^short = "Outcome evidence"
 
-* activity.detail  ^short = "Removed for R5/R6 alignment"
+* activity.detail 0..0
+* activity.detail ^short = "Removed for R5/R6 alignment"
 
 

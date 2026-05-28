@@ -25,7 +25,7 @@ Future versions of this guide may add more detail about those transitions and th
 
 ### Content Realisation
 
-The technical realisation of the Care Plan content starts from the [Care Plan logical model](StructureDefinition-Careplan-logical.html). The logical model identifies the information that needs to be exchanged, independently of a specific resource representation.
+The technical realisation of the Care Plan content starts from the [Care Plan logical model](StructureDefinition-XShareCarePlan.html). The logical model identifies the information that needs to be exchanged, independently of a specific resource representation.
 
 The logical model can be realised by applying the [Care Plan model-to-profile mapping](map-careplan.html). The mapping explains how each logical element is represented in FHIR, either directly in the CarePlan resource or through referenced FHIR resources.
 
