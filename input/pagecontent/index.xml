@@ -47,17 +47,17 @@
   <p>Where:
   </p>
   <ul>
-    <li> The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/business.html">
+    <li> The <a href="https://build.fhir.org/ig/hl7-eu/careplan-xshare/business.html">
         <strong>business domain</strong>
       </a> describes the business rationale of the use cases
       that rely on the Care Plan use case. </li>
-    <li> The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/application.html">
+    <li> The <a href="https://build.fhir.org/ig/hl7-eu/careplan-xshare/application.html">
         <strong>application domain</strong>
       </a> describes three use cases in detail. </li>
-    <li> The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/content.html">
+    <li> The <a href="https://build.fhir.org/ig/hl7-eu/careplan-xshare/content.html">
         <strong>data domain</strong>
       </a> describes the Care Plan data model. </li>
-    <li> The <a href="https://build.fhir.org/ig/hl7-eu/xshare-careplan/technical.html">
+    <li> The <a href="https://build.fhir.org/ig/hl7-eu/careplan-xshare/technical.html">
         <strong>technology domain</strong>
       </a> describes the technology stack, the use cases
       flow referencing the infrastructure components required to support these use cases. </li>

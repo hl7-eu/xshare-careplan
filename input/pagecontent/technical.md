@@ -25,7 +25,7 @@ Future versions of this guide may add more detail about those transitions and th
 
 ### Content Realisation
 
-The technical realisation of the Care Plan content starts from the [Care Plan logical model](StructureDefinition-XShareCarePlan.html). The logical model identifies the information that needs to be exchanged, independently of a specific resource representation.
+The technical realisation of the Care Plan content starts from the [Care Plan logical model](StructureDefinition-CarePlanXShare.html). The logical model identifies the information that needs to be exchanged, independently of a specific resource representation.
 
 The logical model can be realised by applying the [Care Plan model-to-profile mapping](map-careplan.html). The mapping explains how each logical element is represented in FHIR, either directly in the CarePlan resource or through referenced FHIR resources.
 
@@ -44,13 +44,13 @@ This approach keeps the CarePlan resource as the coordination point while allowi
 
 ### FHIR Profiles And Resources Used
 
-The primary implementable artefact defined by this guide is the [xShare Care Plan profile](StructureDefinition-xshare-careplan.html), a profile on the FHIR R4 `CarePlan` resource.
+The primary implementable artefact defined by this guide is the [xShare Care Plan profile](StructureDefinition-careplan-xshare.html), a profile on the FHIR R4 `CarePlan` resource.
 
 The profile currently uses or refers to the following FHIR resources and profiles:
 
 | Resource or profile | Use in this guide |
 | --- | --- |
-| [xShare Care Plan](StructureDefinition-xshare-careplan.html) | Main implementable profile for the Care Plan exchange object. |
+| [xShare Care Plan](StructureDefinition-careplan-xshare.html) | Main implementable profile for the Care Plan exchange object. |
 | `CarePlan` | Base FHIR resource used as the coordination resource for the plan. |
 | `PatientEuCore` | Target profile for `CarePlan.subject`. |
 | `ConditionEuCore` | Target profile for `CarePlan.addresses`, representing problems or health concerns addressed by the plan. |

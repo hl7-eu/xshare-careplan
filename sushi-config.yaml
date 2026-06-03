@@ -1,6 +1,6 @@
-id: hl7.eu.fhir.xshare-careplan
-canonical: http://hl7.eu/fhir/ig/xshare-careplan # check if this may create issues
-name:  XshareCarePlanIg
+id: hl7.eu.fhir.careplan-xshare
+canonical: http://hl7.eu/fhir/ig/careplan-xshare # check if this may create issues
+name:  CarePlanXShareIg
 title: xShare Project CarePlan
 description: The xShare CarePlan HL7 FHIR IG provides guidelines on how to use the CarePlans.
 status: draft # draft | active | retired | unknown
@@ -103,7 +103,7 @@ menu:
 #    Overview: application.html
   Data: content.html
    # Content: content.html
-   # Logical Model: StructureDefinition-XShareCarePlan.html
+   # Logical Model: StructureDefinition-CarePlanXShare.html
    # Xt-EHR Care Plan: https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSCarePlan.html
    # Model Mapping: map-careplan.html
   Technology: technical.html

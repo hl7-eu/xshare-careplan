@@ -2,7 +2,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>XShareCarePlanModel to xShare CarePlan map</title>
+    <title>CarePlanXShareModel to xShare CarePlan map</title>
   </head>
   <body>
 <!--     <div class="model-map-block">
@@ -23,11 +23,11 @@
         </div>
       </div>
     </div>
-    <h3>XShareCarePlanModel to xShare CarePlan map</h3>
+    <h3>CarePlanXShareModel to xShare CarePlan map</h3>
     <a> </a>
     <p></p>
     <p>
-  This page explains how conceptual elements from the XShareCarePlanModel logical model are expressed
+  This page explains how conceptual elements from the CarePlanXShareModel logical model are expressed
   in the corresponding xShare Care Plan profile used by this Implementation Guide.
     </p>
     <p>
@@ -41,25 +41,25 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="StructureDefinition-XShareCarePlan.html">
-        XShareCarePlanModel
+          <a href="StructureDefinition-CarePlanXShare.html">
+        CarePlanXShareModel
           </a>
         </li>
         <li>
           <strong>Target FHIR profile:</strong>
-          <a href="StructureDefinition-xshare-careplan.html">
-        XShareCarePlan
+          <a href="StructureDefinition-careplan-xshare.html">
+        CarePlanXShare
           </a>
         </li>
       </ul>
     </div>
     <p></p>
     <div class="table-wrap">
-      <table summary="XShareCarePlanModel to xShare CarePlan map">
-        <caption>XShareCarePlanModel to xShare CarePlan map</caption>
+      <table summary="CarePlanXShareModel to xShare CarePlan map">
+        <caption>CarePlanXShareModel to xShare CarePlan map</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">XShareCarePlanModel (Logical Model)</th>
+            <th colspan="2" class="src-head">CarePlanXShareModel (Logical Model)</th>
             <th class="relhead">Relationship</th>
             <th colspan="4" class="tgt-head">Target FHIR representation</th>
           </tr>
@@ -235,7 +235,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>goalDetails</td>
+            <td>goalsDetails</td>
             <td>Goals defined for the care plan, including treatment goals and patient goals.</td>
             <td>related-to</td>
             <td>CarePlan</td><td>goal</td>
@@ -243,7 +243,7 @@
             <td><code>CarePlan.goal</code> references Goal resources; the logical-model goal details are represented in the referenced Goal.</td>
           </tr>
           <tr>
-            <td>goalDetails.category</td>
+            <td>goalsDetails.category</td>
             <td>Categorization of the goal, e.g. treatment goal or patient goal.</td>
             <td>equivalent</td>
             <td>Goal</td><td>category</td>
@@ -251,7 +251,7 @@
             <td>Reached through CarePlan.goal.</td>
           </tr>
           <tr>
-            <td>goalDetails.target</td>
+            <td>goalsDetails.target</td>
             <td>Target of the goal.</td>
             <td>equivalent</td>
             <td>Goal</td><td>target</td>
@@ -259,7 +259,7 @@
             <td>Use the appropriate <code>Goal.target</code> parts, including <code>detail[x]</code>, depending on how the target is represented.</td>
           </tr>
           <tr>
-            <td>goalDetails.due</td>
+            <td>goalsDetails.due</td>
             <td>Date by which the goal should be met or reviewed.</td>
             <td>related-to</td>
             <td>Goal</td><td>target.dueDate</td>
@@ -267,7 +267,7 @@
             <td>Use Goal.statusDate instead if a future refinement needs to record when an achieved/improving status took effect.</td>
           </tr>
           <tr>
-            <td>activityDetails</td>
+            <td>activitiesDetails</td>
             <td>Planned or performed activities as part of the care plan.</td>
             <td>related-to</td>
             <td>CarePlan</td><td>activity</td>
@@ -275,7 +275,7 @@
             <td>Acts as the logical grouping for the mapped activity components below.</td>
           </tr>
           <tr>
-            <td>activityDetails.workflowStatus</td>
+            <td>activitiesDetails.workflowStatus</td>
             <td>Workflow status of the activity.</td>
             <td>related-to</td>
             <td>CarePlan</td><td>activity.reference</td>
@@ -283,7 +283,7 @@
             <td>The activity status is captured in the referenced resource, e.g. ServiceRequest.status, Task.status, Procedure.status, or Appointment.status.</td>
           </tr>
           <tr>
-            <td>activityDetails.description</td>
+            <td>activitiesDetails.description</td>
             <td>Human-readable description of the activity.</td>
             <td>related-to</td>
             <td>CarePlan</td><td>activity</td>
@@ -291,7 +291,7 @@
             <td>Activity-specific description may also be represented in the referenced resource narrative.</td>
           </tr>
           <tr>
-            <td>activityDetails.progress</td>
+            <td>activitiesDetails.progress</td>
             <td>Outcome(s) or progress notes captured for the activity.</td>
             <td>equivalent</td>
             <td>CarePlan</td><td>activity.progress</td>
@@ -299,7 +299,7 @@
             <td>The revised logical model expresses outcome/progress as <code>Annotation</code> rather than separate summary/evidence sub-elements.</td>
           </tr>
           <tr>
-            <td>activityDetails.performed</td>
+            <td>activitiesDetails.performed</td>
             <td>References to the performed activities.</td>
             <td>related-to</td>
             <td>CarePlan</td><td>activity.outcomeReference</td>

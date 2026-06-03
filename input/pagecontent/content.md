@@ -45,7 +45,7 @@ This conceptual view is refined into the logical model described below.
 
 ### Logical Model
 
-The [Care Plan logical model](StructureDefinition-XShareCarePlan.html) defines the source information structure used by this guide. It represents a Care Plan with metadata, care team participation, subject and clinical context, goals, supporting information, planned or performed activities, and activity outcomes.
+The [Care Plan logical model](StructureDefinition-CarePlanXShare.html) defines the source information structure used by this guide. It represents a Care Plan with metadata, care team participation, subject and clinical context, goals, supporting information, planned or performed activities, and activity outcomes.
 
 The main logical groups are:
 
@@ -59,7 +59,7 @@ The logical model is currently marked as draft and experimental. Implementers sh
 
 ### Implementable Specification
 
-The implementable representation is the [xShare Care Plan profile](StructureDefinition-xshare-careplan.html), a profile on the FHIR `CarePlan` resource.
+The implementable representation is the [xShare Care Plan profile](StructureDefinition-careplan-xshare.html), a profile on the FHIR `CarePlan` resource.
 
 The profile is aligned with FHIR R4. Some Care Plan activity details are represented through referenced resources rather than through `CarePlan.activity.detail`, supporting forward alignment with later FHIR versions where the CarePlan activity structure changes.
 
@@ -74,7 +74,7 @@ The primary content artefacts in this guide are:
 
 | Artefact | Purpose |
 | --- | --- |
-| [Care Plan logical model](StructureDefinition-XShareCarePlan.html) | Defines the source information model for the Care Plan domain. |
-| [xShare Care Plan profile](StructureDefinition-xshare-careplan.html) | Defines the implementable FHIR `CarePlan` representation. |
+| [Care Plan logical model](StructureDefinition-CarePlanXShare.html) | Defines the source information model for the Care Plan domain. |
+| [xShare Care Plan profile](StructureDefinition-careplan-xshare.html) | Defines the implementable FHIR `CarePlan` representation. |
 | [Care Plan mapping](map-careplan.html) | Explains how logical model elements map to FHIR resources and elements. |
 

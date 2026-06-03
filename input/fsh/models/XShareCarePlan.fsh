@@ -1,10 +1,10 @@
 // =======================================================
-// Logical Model: XShareCarePlanModel (R4-safe, SUSHI-friendly)
+// Logical Model: CarePlanXShareModel (R4-safe, SUSHI-friendly)
 // =======================================================
 
-Logical: XShareCarePlanModel
+Logical: CarePlanXShareModel
 Parent: EHDSCarePlan
-Id: XShareCarePlan
+Id: CarePlanXShare
 Title: "Care Plan (Logical Model)"
 Description: "Logical model representing a Care Plan structure with metadata, care team participation, subject and clinical context, goals, supporting information, planned or performed activities, and activity outcomes."
 
@@ -34,12 +34,12 @@ Description: "Logical model representing a Care Plan structure with metadata, ca
 * supportingInfo 0..* Reference "Evidence / supporting information" "Evidence or other supporting information used as the basis for this care plan."
 
 // ---------- Goals ----------
-* goalDetails 0..* Base "Goal" "Goals defined for the care plan, including treatment goals defined by the care team and patient goals expressed by the patient."
+* goalsDetails 0..* Base "Goal" "Goals defined for the care plan, including treatment goals defined by the care team and patient goals expressed by the patient."
 
-* goalDetails.category 0..1 CodeableConcept "Category (e.g., treatment, patient goal)" "Categorization of the goal (e.g., treatment goal, patient goal)."
-/* * goalDetails.description 1..1 string "Goal description" "Description of the goal." */
-* goalDetails.target 0..* Base "Goal target" "Target of the goal."
-* goalDetails.due 0..1 date "Goal due date" "Date by which the goal should be met or reviewed."
+* goalsDetails.category 0..1 CodeableConcept "Category (e.g., treatment, patient goal)" "Categorization of the goal (e.g., treatment goal, patient goal)."
+/* * goalsDetails.description 1..1 string "Goal description" "Description of the goal." */
+* goalsDetails.target 0..* Base "Goal target" "Target of the goal."
+* goalsDetails.due 0..1 date "Goal due date" "Date by which the goal should be met or reviewed."
 
 // * activityCodeableConcept 0..0
 
@@ -47,12 +47,12 @@ Description: "Logical model representing a Care Plan structure with metadata, ca
 
 
 // ---------- Activities ----------
-* activityDetails 0..* Base "Activity" "Planned or performed activities as part of the care plan."
+* activitiesDetails 0..* Base "Activity" "Planned or performed activities as part of the care plan."
 
-* activityDetails.workflowStatus 0..1 code "Workflow status" "Workflow status of the activity (e.g., planned, in-progress, completed, stopped)."
-* activityDetails.description 0..1 markdown "Description" "Human-readable description of the activity."
+* activitiesDetails.workflowStatus 0..1 code "Workflow status" "Workflow status of the activity (e.g., planned, in-progress, completed, stopped)."
+* activitiesDetails.description 0..1 markdown "Description" "Human-readable description of the activity."
 
 /* * pluto.structured 0..1 Reference(Resource) "Reference to formal artifact" "Reference to a formal request/performance (e.g., ServiceRequest, Procedure, Task)." */
 
-* activityDetails.progress 0..* Annotation "Outcome, Progresses" "Outcome(s) or progresses captured for the activity."
-* activityDetails.performed 0..* Reference "Performed activity" "References to the performed activities."
+* activitiesDetails.progress 0..* Annotation "Outcome, Progresses" "Outcome(s) or progresses captured for the activity."
+* activitiesDetails.performed 0..* Reference "Performed activity" "References to the performed activities."

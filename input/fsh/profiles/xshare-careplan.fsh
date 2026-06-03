@@ -2,9 +2,9 @@
 // Profile: xShare CarePlan (R4)
 // =======================================================
 
-Profile: XShareCarePlan
+Profile: CarePlanXShare
 Parent: CarePlan
-Id: xshare-careplan
+Id: careplan-xshare
 Title: "xShare Care Plan"
 Description: "CarePlan profile aligned with the Care Plan logical model."
 
@@ -34,6 +34,7 @@ Description: "CarePlan profile aligned with the Care Plan logical model."
 // ---------- Goals ----------
 
 * goal ^short = "Desired outcomes"
+* goal only Reference(GoalXShare)
 
 // Add slices for patient and treatment goal ?
 
