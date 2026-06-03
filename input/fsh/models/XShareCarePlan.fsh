@@ -47,12 +47,12 @@ Description: "Logical model representing a Care Plan structure with metadata, ca
 
 
 // ---------- Activities ----------
-* detailsActivity 0..* Base "Activity" "Planned or performed activities as part of the care plan."
+* activityDetails 0..* Base "Activity" "Planned or performed activities as part of the care plan."
 
-* detailsActivity.workflowStatus 0..1 code "Workflow status" "Workflow status of the activity (e.g., planned, in-progress, completed, stopped)."
-* detailsActivity.narrative 0..1 markdown "Narrative" "Human-readable narrative describing the activity."
+* activityDetails.workflowStatus 0..1 code "Workflow status" "Workflow status of the activity (e.g., planned, in-progress, completed, stopped)."
+* activityDetails.narrative 0..1 markdown "Narrative" "Human-readable narrative describing the activity."
 
 /* * pluto.structured 0..1 Reference(Resource) "Reference to formal artifact" "Reference to a formal request/performance (e.g., ServiceRequest, Procedure, Task)." */
 
-* detailsActivity.progress 0..* Annotation "Outcome, Progresses" "Outcome(s) or progresses captured for the activity."
-* detailsActivity.performed 0..* Reference "Performed activity" "References to the performed activities."
+* activityDetails.progress 0..* Annotation "Outcome, Progresses" "Outcome(s) or progresses captured for the activity."
+* activityDetails.performed 0..* Reference "Performed activity" "References to the performed activities."
