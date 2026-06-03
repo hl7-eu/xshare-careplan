@@ -283,12 +283,12 @@
             <td>The activity status is captured in the referenced resource, e.g. ServiceRequest.status, Task.status, Procedure.status, or Appointment.status.</td>
           </tr>
           <tr>
-            <td>activityDetails.narrative</td>
-            <td>Human-readable narrative describing the activity.</td>
+            <td>activityDetails.description</td>
+            <td>Human-readable description of the activity.</td>
             <td>related-to</td>
             <td>CarePlan</td><td>activity</td>
             <td></td>
-            <td>Activity-specific narrative may also be represented in the referenced resource narrative.</td>
+            <td>Activity-specific description may also be represented in the referenced resource narrative.</td>
           </tr>
           <tr>
             <td>activityDetails.progress</td>
