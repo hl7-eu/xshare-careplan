@@ -59,6 +59,8 @@ pages:
 #    title: xShare Care Plan
   about.xml:
     title: About
+  concept2logical-map.md:
+    title: Conceptual to Logical Model Mapping
   
 #  implementation.md:
 #    title: Implementation Considerations
@@ -101,11 +103,12 @@ menu:
 #    Overview: business.html
   Application: application.html
 #    Overview: application.html
-  Data: content.html
-   # Content: content.html
-   # Logical Model: StructureDefinition-CarePlanXShare.html
+  Data: 
+   Content: content.html
+   Conceptual to logical map: concept2logical-map.html
+   Logical Model: StructureDefinition-CarePlanXShare.html
    # Xt-EHR Care Plan: https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSCarePlan.html
-   # Model Mapping: map-careplan.html
+   Model Mapping: map-careplan.html
   Technology: technical.html
     # Overview: technical.html
     # Model Mapping: map-careplan.html

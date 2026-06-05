@@ -3,6 +3,7 @@ title Care Plan Business Actors
 
 left to right direction
 skinparam packageStyle rectangle
+scale 0.8
 
 ' ========= Actors =========
 actor Patient as PAT
