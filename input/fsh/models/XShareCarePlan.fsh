@@ -3,56 +3,63 @@
 // =======================================================
 
 Logical: CarePlanXShareModel
-Parent: EHDSCarePlan
+Parent: EHDSDataSet
 Id: CarePlanXShare
 Title: "Care Plan (Logical Model)"
-Description: "Logical model representing a Care Plan structure with metadata, care team participation, subject and clinical context, goals, supporting information, planned or performed activities, and activity outcomes."
+Description: """Logical model representing a Care Plan structure with metadata, care team participation, subject and clinical context, goals, supporting information, planned or performed activities, and activity outcomes.
+This model extends the EHDSCarePlan model with additional elements to capture care team participation, clinical context, and activity and goal details, while maintaining logical compatibility with the original EHDSCarePlan structure."""
 
 
-// DErive from EHDS care plan model
 
-// ---------- Core metadata ----------
-/* * newTitle 0..1 string "Title" "Human-friendly title of the care plan." */
+* header.identifier 
+  * ^short = "Identifier for the care plan"
+  * ^definition = "Identifier for the care plan"
+* header.subject 
+  * ^short = "The patient whose intended care is described in the plan."
+  * ^definition = "The patient whose intended care is described in the plan."
+* header.author[x]
+  * ^short = "The responsible party (custodian) for the care plan."
+  * ^definition = "The responsible party (custodian) for the care plan."
+* header.status 
+  * ^short = "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record."
+  * ^definition = "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record."
+  * ^binding.description = "HL7 Request status"
+  * ^binding.strength = #preferred
+* title 0..1 string "Human-friendly name for the care plan"
+* description 0..1 string "A description of the scope and nature of the plan."
+* period 0..1 Period "Indicates when the plan did (or is intended to) come into effect and end."
+
+// ADDED
 * realize[x] 0..* uri or Reference "Instantiated Guideline" "Identifier or reference to the guidelines that this care plan realizes."
-/* * newDescription 0..1 markdown "Description" "Narrative description of the care plan." */
-/* * status 1..1 code "Status" "Workflow/lifecycle status of the care plan." */
 * category 0..* CodeableConcept "Category" "Categorization of the care plan (e.g., rehab, chronic care, oncology)."
-/* * newPeriod 0..1 Period "Period" "Time period the care plan covers." */
-/* * author[x] 0..* EHDSHealthProfessional or EHDSOrganisation "Author" "Person or organization responsible for creating the care plan." */
-
-// Add device in the author
-
 * careTeam 0..* Base "Care team / organization in charge" "Care team or responsible organization in charge of the plan."
 * careTeam.member[x] 0..* EHDSHealthProfessional or EHDSOrganisation "Care team member" "References to practitioners, organizations, or related persons involved in the care plan."
+//----
 
-// ---------- Subject / clinical context ----------
-/* * subject 1..1 EHDSPatient "Subject" "The patient who is the subject of this care plan." */
+* addresses[x] 0..* CodeableConcept or EHDSCondition "Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan."
+  * ^binding.description = "ICD-10, SNOMED CT, Orphacode"
+  * ^binding.strength = #preferred
 
-/* * reason 0..* EHDSCondition "Reason (problem/health concern)" "Problems/health concerns prompting the care plan." */
+// MODIFIED
+* activity 0..* Base "Activity" "Planned or performed activities as part of the care plan."
+  // this is the EHDSCarePlan original activity[x] element
+  * codeOrReference[x] 0..* CodeableConcept or Reference "The details of the proposed activity represented in a specific resource."
+  // ----
+  * workflowStatus 0..1 code "Workflow status" "Workflow status of the activity (e.g., planned, in-progress, completed, stopped)."
+  * description 0..1 markdown "Description" "Human-readable description of the activity."
+  * progress 0..* Annotation "Outcome, Progresses" "Outcome(s) or progresses captured for the activity."
+  * performed 0..* Reference "Performed activity" "References to the performed activities."
 
-
+// MODIFIED
+* goal 0..* Base "Goal" "Goals defined for the care plan, including treatment goals defined by the care team and patient goals expressed by the patient."
+  // this is the EHDSCarePlan original goal element
+  * code 0..* CodeableConcept "Describes the intended objective(s) of carrying out the care plan."
+  // ---
+  * category 0..1 CodeableConcept "Category (e.g., treatment, patient goal)" "Categorization of the goal (e.g., treatment goal, patient goal)."
+  * target 0..* Base "Goal target" "Target of the goal."
+  * due 0..1 date "Goal due date" "Date by which the goal should be met or reviewed."
+  * outcome[x] 0..* CodeableConcept or EHDSObservation "Goal outcome" "Outcome of the goal, which can be represented as a codeable concept or a reference to an observation or other resource capturing the outcome."
+  
+// ADDED
 * supportingInfo 0..* Reference "Evidence / supporting information" "Evidence or other supporting information used as the basis for this care plan."
 
-// ---------- Goals ----------
-* goalsDetails 0..* Base "Goal" "Goals defined for the care plan, including treatment goals defined by the care team and patient goals expressed by the patient."
-
-* goalsDetails.category 0..1 CodeableConcept "Category (e.g., treatment, patient goal)" "Categorization of the goal (e.g., treatment goal, patient goal)."
-/* * goalsDetails.description 1..1 string "Goal description" "Description of the goal." */
-* goalsDetails.target 0..* Base "Goal target" "Target of the goal."
-* goalsDetails.due 0..1 date "Goal due date" "Date by which the goal should be met or reviewed."
-
-// * activityCodeableConcept 0..0
-
-* activity[x] only Reference
-
-
-// ---------- Activities ----------
-* activitiesDetails 0..* Base "Activity" "Planned or performed activities as part of the care plan."
-
-* activitiesDetails.workflowStatus 0..1 code "Workflow status" "Workflow status of the activity (e.g., planned, in-progress, completed, stopped)."
-* activitiesDetails.description 0..1 markdown "Description" "Human-readable description of the activity."
-
-/* * pluto.structured 0..1 Reference(Resource) "Reference to formal artifact" "Reference to a formal request/performance (e.g., ServiceRequest, Procedure, Task)." */
-
-* activitiesDetails.progress 0..* Annotation "Outcome, Progresses" "Outcome(s) or progresses captured for the activity."
-* activitiesDetails.performed 0..* Reference "Performed activity" "References to the performed activities."

@@ -7,14 +7,35 @@ skinparam packageStyle rectangle
 ' ========= Actors =========
 actor Patient as PAT
 actor "HC Professional" as HCP
-actor Clinician as CLIN
-actor Nurse as NUR
 actor "HC Provider (Org)" as ORG
 actor Relatives as REL
 actor Caregiver as CARG
 
-CLIN -|> HCP
-NUR  -|> HCP
+
+note right of PAT
+Subject of the Care Plan. An active participant who can access,
+share and record assigned care plan actions.
+end note
+
+note right of HCP
+Professional role responsible for clinical
+use and management of the care plan.
+end note
+
+note right of ORG
+Provider organisation supporting oversight,
+coordination and outcome monitoring.
+end note
+
+note right of REL
+Authorised family participant supporting
+practical care plan activities.
+end note
+
+note right of CARG
+Day-to-day support role helping execute,
+record and monitor care plan actions.
+end note
 
 
 

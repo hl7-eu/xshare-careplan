@@ -1,5 +1,5 @@
 
-The **business domain** describes the overview and business use cases that will rely on the Care Plan.
+The **business domain** describes the overall context and business use cases that make use of the Care Plan.
 
 <div>
 {% include bdat-b.svg %}
@@ -22,7 +22,7 @@ Across Europe, healthcare systems are increasingly characterised by:
 
 These developments require care coordination mechanisms that are structured, interoperable and capable of computational support. Narrative or locally defined care planning approaches are insufficient to support cross-border exchange, systematic quality measurement or digital decision support.
 
-Within the xShare project, the ambition is to expand and operationalise the European EHRxF to support effective and meaningful exchange of health data in the EHDS context. As part of this work, Deliverable 3.4 proposes the definition of a new Health Information Domain for Care Plans.
+Within the xShare project, the ambition is to expand and operationalise the European EHRxF to support effective and meaningful exchange of health data in the EHDS context. As part of this work, xShare propose a new Health Information Domain (HID) for Care Plans.
 
 The core conceptual position of this deliverable is that:
 
