@@ -61,6 +61,8 @@ pages:
     title: About
   concept2logical-map.md:
     title: Conceptual to Logical Model Mapping
+  get-started.md:
+    title: Getting Started
   
 #  implementation.md:
 #    title: Implementation Considerations
@@ -99,6 +101,7 @@ menu:
   Home: index.html
  # Table of Contents: toc.html
  # X-Bundle registry: https://x-bundles.ehr-exchange-format.eu/
+  Getting Started: get-started.html
   Business: business.html
 #    Overview: business.html
   Application: application.html
