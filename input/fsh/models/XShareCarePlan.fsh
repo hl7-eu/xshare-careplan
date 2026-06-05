@@ -9,8 +9,6 @@ Title: "Care Plan (Logical Model)"
 Description: """Logical model representing a Care Plan structure with metadata, care team participation, subject and clinical context, goals, supporting information, planned or performed activities, and activity outcomes.
 This model extends the EHDSCarePlan model with additional elements to capture care team participation, clinical context, and activity and goal details, while maintaining logical compatibility with the original EHDSCarePlan structure."""
 
-
-
 * header.identifier 
   * ^short = "Identifier for the care plan"
   * ^definition = "Identifier for the care plan"
@@ -43,7 +41,8 @@ This model extends the EHDSCarePlan model with additional elements to capture ca
 // MODIFIED
 * activity 0..* Base "Activity" "Planned or performed activities as part of the care plan."
   // this is the EHDSCarePlan original activity[x] element
-  * codeOrReference[x] 0..* CodeableConcept or Reference "The details of the proposed activity represented in a specific resource."
+  * activityCodeableConcept 0..* CodeableConcept "The details of the proposed activity represented in a specific resource."
+  * activityReference 0..* Reference "The details of the proposed activity represented in a specific resource."
   // ----
   * workflowStatus 0..1 code "Workflow status" "Workflow status of the activity (e.g., planned, in-progress, completed, stopped)."
   * description 0..1 markdown "Description" "Human-readable description of the activity."
@@ -53,12 +52,12 @@ This model extends the EHDSCarePlan model with additional elements to capture ca
 // MODIFIED
 * goal 0..* Base "Goal" "Goals defined for the care plan, including treatment goals defined by the care team and patient goals expressed by the patient."
   // this is the EHDSCarePlan original goal element
-  * code 0..* CodeableConcept "Describes the intended objective(s) of carrying out the care plan."
+  * description 0..* CodeableConcept "Describes the intended objective(s) of carrying out the care plan."
   // ---
   * category 0..1 CodeableConcept "Category (e.g., treatment, patient goal)" "Categorization of the goal (e.g., treatment goal, patient goal)."
   * target 0..* Base "Goal target" "Target of the goal."
   * due 0..1 date "Goal due date" "Date by which the goal should be met or reviewed."
-  * outcome[x] 0..* CodeableConcept or EHDSObservation "Goal outcome" "Outcome of the goal, which can be represented as a codeable concept or a reference to an observation or other resource capturing the outcome."
+  * outcome 0..* EHDSObservation "Goal outcome" "Outcome of the goal, which can be represented as a codeable concept or a reference to an observation or other resource capturing the outcome."
   
 // ADDED
 * supportingInfo 0..* Reference "Evidence / supporting information" "Evidence or other supporting information used as the basis for this care plan."
