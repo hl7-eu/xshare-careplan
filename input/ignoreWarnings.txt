@@ -1,14 +1,5 @@
 == Suppressed Messages ==
 
-# No schematrons available for Logical Models
-
-The link 'StructureDefinition-Patient.sch' for "Schematron" cannot be resolved
-The link 'StructureDefinition-LabelConcept.sch' for "Schematron" cannot be resolved
-The link 'StructureDefinition-PersonName.sch' for "Schematron" cannot be resolved
-The link 'StructureDefinition-conformance-cen-ips-examples.html' for "Examples" cannot be resolved
-The link 'StructureDefinition-conformance-cen-ips-examples.html' for "Examples" cannot be resolved
-
-
 # The code used is not part  in the 'additional' value set. 
 None of the codings provided are in the value set 'eHDSI Illness and Disorder' (http://terminology.ehdsi.eu/ValueSet/eHDSIIllnessandDisorder|0.2.0) specified in an additional binding, and a coding is recommended to come from this value set (codes = http://snomed.info/sct#44054006)
 

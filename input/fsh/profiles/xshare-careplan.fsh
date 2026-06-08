@@ -4,7 +4,7 @@
 
 Profile: CarePlanXShare
 Parent: CarePlan
-Id: careplan-xshare
+Id: xshare-careplan
 Title: "xShare Care Plan"
 Description: "CarePlan profile aligned with the Care Plan logical model."
 

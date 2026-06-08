@@ -1,7 +1,7 @@
 {
   "resourceType" : "Requirements",
   "id" : "fromNarrative",
-  "url" : "http://hl7.eu/fhir/ig/careplan-xshare/Requirements/fromNarrative",
+  "url" : "http://hl7.eu/fhir/ig/xshare-careplan/Requirements/fromNarrative",
   "name" : "FromNarrative",
   "title" : "Narrative Conformance Statements",
   "status" : "active",

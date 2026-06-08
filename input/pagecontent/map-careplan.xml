@@ -49,7 +49,7 @@
         </li>
         <li>
           <strong>Target FHIR profiles:</strong>
-          <a href="StructureDefinition-careplan-xshare.html">
+          <a href="StructureDefinition-xshare-careplan.html">
         CarePlanXShare
           </a>
           and

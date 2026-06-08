@@ -71,7 +71,7 @@ An element-by-element forward mapping has been specified between the Care Plan l
 
 ### Implementable Specification
 
-The implementable representation uses the [xShare Care Plan profile](StructureDefinition-careplan-xshare.html), a profile on the FHIR R4 `CarePlan` resource. Goals referenced by the Care Plan are represented using the [xShare Goal profile](StructureDefinition-goal-xshare.html), a profile on the FHIR R4 `Goal` resource.
+The implementable representation uses the [xShare Care Plan profile](StructureDefinition-xshare-careplan.html), a profile on the FHIR R4 `CarePlan` resource. Goals referenced by the Care Plan are represented using the [xShare Goal profile](StructureDefinition-goal-xshare.html), a profile on the FHIR R4 `Goal` resource.
 
 The Care Plan profile keeps `CarePlan` as the coordination resource. Some activity details are represented through referenced resources rather than through `CarePlan.activity.detail`, which is constrained out to support alignment with later FHIR versions where the CarePlan activity structure changes.
 
@@ -83,6 +83,6 @@ The primary content artefacts in this guide are:
 | --- | --- |
 | [Conceptual to Logical Model Mapping](concept2logical-map.html) | Shows how selected Care Plan conceptual elements are represented in the logical model. |
 | [Care Plan logical model](StructureDefinition-CarePlanXShare.html) | Defines the source information model for the Care Plan domain. |
-| [xShare Care Plan profile](StructureDefinition-careplan-xshare.html) | Defines the implementable FHIR `CarePlan` representation. |
+| [xShare Care Plan profile](StructureDefinition-xshare-careplan.html) | Defines the implementable FHIR `CarePlan` representation. |
 | [xShare Goal profile](StructureDefinition-goal-xshare.html) | Defines the implementable FHIR `Goal` representation used for care plan goals. |
 | [Logical to HL7 FHIR Profile model map](map-careplan.html) | Explains how logical model elements map to FHIR resources and elements. |

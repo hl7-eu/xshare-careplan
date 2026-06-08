@@ -11,10 +11,10 @@ The following example instances are included in this Implementation Guide and ar
 
 | Example | Resource |
 | --- | --- |
-| [xShare Care Plan example](CarePlan-careplan-xshare-example.html) | CarePlan |
-| [xShare Care Plan example patient](Patient-careplan-xshare-patient-example.html) | Patient |
-| [xShare Care Plan example condition](Condition-careplan-xshare-condition-example.html) | Condition |
-| [xShare Care Plan example goal](Goal-careplan-xshare-goal-example.html) | Goal |
-| [xShare Care Plan example activity](ServiceRequest-careplan-xshare-servicerequest-example.html) | ServiceRequest |
-| [xShare Care Plan example care team](CareTeam-careplan-xshare-careteam-example.html) | CareTeam |
-| [xShare Care Plan example organization](Organization-careplan-xshare-organization-example.html) | Organization |
+| [xShare Care Plan example](CarePlan-xshare-careplan-example.html) | CarePlan |
+| [xShare Care Plan example patient](Patient-xshare-careplan-patient-example.html) | Patient |
+| [xShare Care Plan example condition](Condition-xshare-careplan-condition-example.html) | Condition |
+| [xShare Care Plan example goal](Goal-xshare-careplan-goal-example.html) | Goal |
+| [xShare Care Plan example activity](ServiceRequest-xshare-careplan-servicerequest-example.html) | ServiceRequest |
+| [xShare Care Plan example care team](CareTeam-xshare-careplan-careteam-example.html) | CareTeam |
+| [xShare Care Plan example organization](Organization-xshare-careplan-organization-example.html) | Organization |

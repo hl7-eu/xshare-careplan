@@ -30,7 +30,7 @@ Future versions of this guide may add more detail about those transitions and th
 
 The technical realisation of the Care Plan content starts from the [Care Plan logical model](StructureDefinition-CarePlanXShare.html). The logical model identifies the information that needs to be exchanged, independently of a specific resource representation.
 
-The primary implementable artefact defined by this guide is the [xShare Care Plan profile](StructureDefinition-careplan-xshare.html), a profile on the FHIR R4 `CarePlan` resource.
+The primary implementable artefact defined by this guide is the [xShare Care Plan profile](StructureDefinition-xshare-careplan.html), a profile on the FHIR R4 `CarePlan` resource.
 
 
 ### Implementation Considerations

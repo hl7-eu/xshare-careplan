@@ -1,14 +1,17 @@
 {
-  "package-id" : "hl7.eu.fhir.careplan-xshare",
+  "package-id" : "hl7.eu.fhir.xshare-careplan",
   "version" : "0.1.0",
-  "path" : "http://hl7.eu/fhir/ig/careplan-xshare/0.1.0",
-  "status" : "qa-preview",
+  "path" : "http://hl7.eu/fhir/ig/xshare-careplan/0.1.0",
+  "status" : "preview",
   "sequence" : "Release 1",
   "first": true,
   "mode": "milestone",
-  "ci-build": "https://build.fhir.org/ig/hl7-eu/careplan-xshare",
+  "ci-build": "https://build.fhir.org/ig/hl7-eu/xshare-careplan",
   "desc" : "First preview release of the xShare Project Care Plan Implementation Guide.",
+  "registry-description" : "The xShare Project Care Plan Implementation Guide provides guidance for representing and exchanging care plan information using HL7 FHIR in the European Health Data Space context.",
+  "registry-country" : "eu",
+  "registry-authority" : "xShare Project",
   "title" : "xShare Project Care Plan Implementation Guide",
   "category" : "EHDS",
-  "introduction" : "This guide provides instructions to help you understand and implement your product in accordance with the xShare Care Plan, facilitating in the access and adoption of the selected specifications."
+  "introduction" : "This guide provides instructions to help implement care plans within the scope of the xShare Project."
 }

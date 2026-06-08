@@ -1,13 +1,13 @@
-id: hl7.eu.fhir.careplan-xshare
-canonical: http://hl7.eu/fhir/ig/careplan-xshare # check if this may create issues
+id: hl7.eu.fhir.xshare-careplan
+canonical: http://hl7.eu/fhir/ig/xshare-careplan # check if this may create issues
 name:  CarePlanXShareIg
 title: xShare Project CarePlan
 description: The xShare CarePlan HL7 FHIR IG provides guidelines on how to use the CarePlans.
 status: draft # draft | active | retired | unknown
-version: 1.0.0-ci #
+version: 0.1.0 #
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: qa-preview # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: 	http://unstats.un.org/unsd/methods/m49/m49.htm#150 "Europe" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
@@ -26,7 +26,7 @@ dependencies:
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-#     version: 1.0.0
+#     version: 0.1.0
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
