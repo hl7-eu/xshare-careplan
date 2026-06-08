@@ -46,9 +46,9 @@ end opt
 deactivate HCP_APP
 end group
 
-==== Monitor care plan ====
-group "Monitor care plan"
-HCP -> HCP_APP: Monitor care plan
+==== Assessment and follow up ====
+group "Assessment and follow up"
+HCP -> HCP_APP: Assessment and follow up
 activate HCP_APP
 HCP_APP -> EHR_S: Search care plan
 EHR_S --> HCP_APP: Care plan data

@@ -120,7 +120,7 @@ menu:
   Downloads: downloads.html
   Artifacts: artifacts.html
   About: about.html
-  Xt-EHR: https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSCarePlan.html
+  # Xt-EHR: https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSCarePlan.html
 
 
   # Button: button.html

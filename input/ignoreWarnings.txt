@@ -8,3 +8,14 @@ The link 'StructureDefinition-PersonName.sch' for "Schematron" cannot be resolve
 The link 'StructureDefinition-conformance-cen-ips-examples.html' for "Examples" cannot be resolved
 The link 'StructureDefinition-conformance-cen-ips-examples.html' for "Examples" cannot be resolved
 
+
+# The code used is not part  in the 'additional' value set. 
+None of the codings provided are in the value set 'eHDSI Illness and Disorder' (http://terminology.ehdsi.eu/ValueSet/eHDSIIllnessandDisorder|0.2.0) specified in an additional binding, and a coding is recommended to come from this value set (codes = http://snomed.info/sct#44054006)
+
+# Xt-EHR logical models have been published as R5, but they work also in R4
+The ImplementationGuide is based on FHIR version 4.0.1 but package xtehr.eu.ehds.models#1.0.0 is based on FHIR version 5.0.0. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
+This IG is version 4.0.1, while the IG 'xtehr.eu.ehds.models' is from version 5.0.0
+This IG is for FHIR version 4.0.1, while the package 'hl7.terminology.r5#7.1.0' is for FHIR version 5.0.0
+
+# Value set derived from FHIR R4 
+The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'

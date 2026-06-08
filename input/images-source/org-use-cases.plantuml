@@ -8,7 +8,7 @@ actor "HC Provider (Org)" as ORG
 
 rectangle "Care Plan Services" {
   usecase "Search & see care plan" as UC_View
-  usecase "Monitor care plan\n(outcomes)" as UC_Monitor
+  usecase "Assessment and follow up." as UC_Monitor
   usecase "See the care plan" as UC_See
 }
 

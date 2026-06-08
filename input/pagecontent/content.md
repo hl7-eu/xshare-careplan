@@ -15,11 +15,11 @@ The Care Plan content model is organised around the information needed to coordi
 * Metadata that identifies and classifies the care plan
 * The patient who is the subject of the plan
 * The author and care team responsible for the plan
-* Clinical reasons, problems or health concerns addressed by the plan
+* Problems or health concerns addressed by the plan
 * Supporting evidence and contextual information
 * Goals, including treatment goals and patient-expressed goals
 * Planned or performed activities
-* Progress, outcomes and evidence associated with activities and goals
+* Progress and Outcomes (e.g. observations) associated with activities and goals
 
 The logical model is intentionally close to the business and application views described elsewhere in this guide. It separates care planning concepts from the technical FHIR representation so that the information model can be reviewed independently from a specific implementation profile.
 

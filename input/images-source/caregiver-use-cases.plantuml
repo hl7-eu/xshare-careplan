@@ -11,7 +11,7 @@ rectangle "Care Plan Services" {
   usecase "Share care plan" as UC_Share
   usecase "Execute & record actions" as UC_Exec
   usecase "See the care plan" as UC_See
-  usecase "Monitor care plan\n(outcomes)" as UC_Monitor
+  usecase "Assessment and follow up." as UC_Monitor
 }
 
 CARG --> UC_View

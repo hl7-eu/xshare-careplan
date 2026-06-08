@@ -1,4 +1,4 @@
-The **application domain** summarises the application-level interactions that can support future European adoption of structured Care Plans.
+The **application domain** summarises the application-level interactions that can support future European adoption of Care Plans.
 
 <div>
 <p> </p>
@@ -6,14 +6,18 @@ The **application domain** summarises the application-level interactions that ca
 <p> </p>
 </div>
 
+
 <div class="model-map-block">
-  <div class="callout-wrapper">
+    <div class="callout-wrapper">
     <div class="callout-box">
-      <strong>Scope of this version:</strong>
-      This version of the guide focuses on the content specification for Care Plans. It defines the logical model, the implementable FHIR profile and the mapping between them. Detailed exchange transitions, workflow orchestration, security patterns, API interactions and deployment architecture are outside the scope of this version and may be added in future versions. The interaction diagrams below are provided as illustrative examples for patient and health care professional applications.
+        <strong>Scope of this version:</strong>
+            <p>This version of the guide focuses on the content specification for Care Plans.</p>
+            <p>It defines the logical model, the implementable HL7 FHIR profile and the mapping between them.</p>
+            <p>Detailed exchange transitions, workflow orchestration, security patterns, API interactions and deployment architecture are outside the scope of this version, and when included, are provided only for informative purposes. For example, the interaction diagrams below are provided as illustrative examples for patient and health care professional applications.</p>
     </div>
-  </div>
+    </div>
 </div>
+
 
 ### Application Participants
 
@@ -29,7 +33,9 @@ The patient app supports access to the care plan and recording of patient-execut
 
 ### Care Plan Actions Sequence
 
-The following sequences describe possible application interactions around Care Plan access and update. They are not intended to define mandatory API choreography in this version of the guide; they show how the content specification can be used in typical application flows.
+The following sequences describe possible application interactions around Care Plan access and update. 
+**They are not intended to define reference API choreography, or pretend to be exhaustive**. 
+For this version of the guide they just provide an example on how the content specification can be used in some application flows.
 
 #### Patient App Actions Sequence
 
