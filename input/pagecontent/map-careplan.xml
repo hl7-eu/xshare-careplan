@@ -266,8 +266,7 @@
             <td>equivalent</td>
             <td>CarePlan</td>
             <td>activity.reference</td>
-            <td>Reference to the request, task, encounter, procedure, appointment, or other activity
-              resource.</td>
+            <td>Reference to the activity resource.</td>
             <td></td>
           </tr>
           <tr>
@@ -278,7 +277,7 @@
             <td>activity.reference</td>
             <td>Reference to the activity resource.</td>
             <td>The activity status is captured in the referenced resource, e.g.
-              ServiceRequest.status, Task.status, Procedure.status, or Appointment.status.</td>
+              ServiceRequest.status.</td>
           </tr>
           <tr>
             <td>activity.description</td>
