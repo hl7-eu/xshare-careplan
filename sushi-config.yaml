@@ -55,6 +55,8 @@ pages:
     title: Care Plan Mapping
   downloads.md:
     title: Downloads
+  examples.md:
+    title: Examples
 #  button.md:
 #    title: xShare Care Plan
   about.xml:
@@ -107,17 +109,18 @@ menu:
   Application: application.html
 #    Overview: application.html
   Data: 
-   Content: content.html
+   Overview : content.html
    Conceptual to logical map: concept2logical-map.html
    Logical Model: StructureDefinition-CarePlanXShare.html
    # Xt-EHR Care Plan: https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSCarePlan.html
    Model Mapping: map-careplan.html
+   Examples: examples.html
   Technology: technical.html
     # Overview: technical.html
     # Model Mapping: map-careplan.html
     # Content: content.html
-
   Downloads: downloads.html
+  
   Artifacts: artifacts.html
   About: about.html
   # Xt-EHR: https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSCarePlan.html
